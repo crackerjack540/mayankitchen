@@ -1,0 +1,2 @@
+class Tapa < ApplicationRecord
+end

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tapas
   resources :appetizers
   resources :dinners
   get 'menu/lunch'

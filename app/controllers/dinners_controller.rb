@@ -6,6 +6,7 @@ class DinnersController < ApplicationController
   def index
     @dinners = Dinner.all
         @appetizers = Appetizer.all
+    @tapas = Tapa.all
 
   end
 

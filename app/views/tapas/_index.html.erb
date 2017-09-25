@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Antojiotos (Appetizers)</h1>
+<h1>Tapas</h1>
 
 <table>
   <thead>
@@ -13,11 +13,11 @@
   </thead>
 
   <tbody>
-    <% @appetizers.each do |appetizer| %>
+    <% @tapas.each do |tapa| %>
       <tr>
-        <td><%= appetizer.title %></td>
-        <td><%= appetizer.description %></td>
-        <td><%= appetizer.price %></td>
+        <td><%= tapa.title %></td>
+        <td><%= tapa.description %></td>
+        <td><%= tapa.price %></td>
       </tr>
     <% end %>
   </tbody>

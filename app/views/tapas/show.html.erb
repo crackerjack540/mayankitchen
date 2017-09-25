@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @tapa.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @tapa.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @tapa.price %>
+</p>
+
+<%= link_to 'Edit', edit_tapa_path(@tapa) %> |
+<%= link_to 'Back', tapas_path %>

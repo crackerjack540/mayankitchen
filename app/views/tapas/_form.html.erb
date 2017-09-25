@@ -1,0 +1,32 @@
+<%= form_with(model: tapa, local: true) do |form| %>
+  <% if tapa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tapa.errors.count, "error") %> prohibited this tapa from being saved:</h2>
+
+      <ul>
+      <% tapa.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :tapa_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :tapa_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price, id: :tapa_price %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
