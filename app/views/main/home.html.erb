@@ -1,0 +1,52 @@
+<% content_for :head do %>
+  <meta name="turbolinks-cache-control" content="no-cache">
+<% end %>
+
+<div class="container">
+  <h1> Welcom to he Mayan Kitchen</h1>
+</div>
+
+<div class="container" id="slick">
+  <div class="your-class">
+    <div><%= image_tag 'food01' %></div>
+    <div><%= image_tag 'food02' %></div>
+    <div><%= image_tag 'food03' %></div>
+  </div>
+</div>
+
+  <script>
+    $(document).ready(function(){
+      $('.your-class').slick({
+        infinite: true,
+        autoplay: true,
+        fade: true,
+        speed: 700,
+        slidesToShow: 1,
+        adaptiveHeight: true
+      });
+    });
+  </script>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+
+      <h2>Hours</h2>
+      <h3>Monday - Thursday</h3>
+      <h4>11:00AM - 10:00PM</h4>
+      <h3>Friday</h3>
+      <h4>11:00AM - 12:00AM</h4>
+      <h3>Saturday</h3>
+      <h4>09:00AM - 12:00AM</h4>
+      <h3>Sunday</h3>
+      <h4>09:00AM - 10:00PM</h4>
+
+    </div>
+    <div class="col-sm-6">
+      <h2> Follow Us!</h2>
+    <%= image_tag 'facebook' %>
+    <%= image_tag 'twitter' %>
+
+  </div>
+</div>
+
