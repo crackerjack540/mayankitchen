@@ -1,0 +1,32 @@
+<%= form_with(model: appetizer, local: true) do |form| %>
+  <% if appetizer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(appetizer.errors.count, "error") %> prohibited this appetizer from being saved:</h2>
+
+      <ul>
+      <% appetizer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :appetizer_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :appetizer_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_area :price, id: :appetizer_price %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

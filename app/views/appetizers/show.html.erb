@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @appetizer.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @appetizer.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @appetizer.price %>
+</p>
+
+<%= link_to 'Edit', edit_appetizer_path(@appetizer) %> |
+<%= link_to 'Back', appetizers_path %>
