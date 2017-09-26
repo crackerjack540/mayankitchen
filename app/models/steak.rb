@@ -1,0 +1,2 @@
+class Steak < ApplicationRecord
+end

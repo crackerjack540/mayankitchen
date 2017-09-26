@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170926050322) do
+ActiveRecord::Schema.define(version: 20170926053948) do
 
   create_table "appetizers", force: :cascade do |t|
     t.string "title"
@@ -23,6 +23,14 @@ ActiveRecord::Schema.define(version: 20170926050322) do
   create_table "appetizers_dinners", id: false, force: :cascade do |t|
     t.integer "dinner_id", null: false
     t.integer "appetizer_id", null: false
+  end
+
+  create_table "chickens", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "dinners", force: :cascade do |t|
@@ -50,7 +58,55 @@ ActiveRecord::Schema.define(version: 20170926050322) do
     t.string "appetizer"
   end
 
+  create_table "nachos", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "porks", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "salads", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "seafoods", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "sides", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "soups", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "steaks", force: :cascade do |t|
     t.string "title"
     t.text "description"
     t.string "price"

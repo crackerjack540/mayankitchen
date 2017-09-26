@@ -1,0 +1,2 @@
+module SeafoodsHelper
+end

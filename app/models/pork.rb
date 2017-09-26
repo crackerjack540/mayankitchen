@@ -1,0 +1,2 @@
+class Pork < ApplicationRecord
+end

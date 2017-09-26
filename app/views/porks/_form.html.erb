@@ -1,0 +1,32 @@
+<%= form_with(model: pork, local: true) do |form| %>
+  <% if pork.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pork.errors.count, "error") %> prohibited this pork from being saved:</h2>
+
+      <ul>
+      <% pork.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :pork_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :pork_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price, id: :pork_price %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

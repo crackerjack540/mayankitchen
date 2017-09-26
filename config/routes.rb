@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  resources :sides
+  resources :seafoods
+  resources :porks
+  resources :chickens
+  resources :steaks
+  resources :salads
+  resources :nachos
   resources :dips
   resources :soups
   resources :tapas

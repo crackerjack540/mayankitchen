@@ -1,0 +1,2 @@
+class Seafood < ApplicationRecord
+end

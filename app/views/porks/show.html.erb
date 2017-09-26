@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @pork.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @pork.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @pork.price %>
+</p>
+
+<%= link_to 'Edit', edit_pork_path(@pork) %> |
+<%= link_to 'Back', porks_path %>

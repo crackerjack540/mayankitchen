@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pollo (Chicken)</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @chickens.each do |chicken| %>
+      <tr>
+        <td><%= chicken.title %></td>
+        <td><%= chicken.description %></td>
+        <td><%= chicken.price %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

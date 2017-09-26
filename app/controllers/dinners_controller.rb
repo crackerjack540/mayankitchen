@@ -9,6 +9,13 @@ class DinnersController < ApplicationController
     @tapas = Tapa.all
     @soups = Soup.all
     @dips = Dip.all
+    @nachos = Nacho.all
+    @salads = Salad.all
+    @steaks = Steak.all
+    @chickens = Chicken.all
+    @porks = Pork.all
+    @seafoods = Seafood.all
+    @sides = Side.all
 
 
   end

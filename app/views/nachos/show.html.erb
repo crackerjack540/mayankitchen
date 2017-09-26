@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @nacho.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @nacho.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @nacho.price %>
+</p>
+
+<%= link_to 'Edit', edit_nacho_path(@nacho) %> |
+<%= link_to 'Back', nachos_path %>
