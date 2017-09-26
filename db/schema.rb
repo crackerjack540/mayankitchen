@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170926053948) do
+ActiveRecord::Schema.define(version: 20170926145407) do
 
   create_table "appetizers", force: :cascade do |t|
     t.string "title"
@@ -25,7 +25,31 @@ ActiveRecord::Schema.define(version: 20170926053948) do
     t.integer "appetizer_id", null: false
   end
 
+  create_table "brunches", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "chickens", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "chimichangas", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "desserts", force: :cascade do |t|
     t.string "title"
     t.text "description"
     t.string "price"
@@ -53,9 +77,50 @@ ActiveRecord::Schema.define(version: 20170926053948) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "drinks", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "enchiladas", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "fajita", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "fajitas", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "join_t_able_dinner_appetizers", force: :cascade do |t|
     t.string "dinner"
     t.string "appetizer"
+  end
+
+  create_table "lunches", force: :cascade do |t|
+    t.string "t"
+    t.string "title"
+    t.text "description"
+    t.string "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "nachos", force: :cascade do |t|
@@ -67,6 +132,14 @@ ActiveRecord::Schema.define(version: 20170926053948) do
   end
 
   create_table "porks", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "quesadillas", force: :cascade do |t|
     t.string "title"
     t.text "description"
     t.string "price"
@@ -107,6 +180,14 @@ ActiveRecord::Schema.define(version: 20170926053948) do
   end
 
   create_table "steaks", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.string "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tacos", force: :cascade do |t|
     t.string "title"
     t.text "description"
     t.string "price"

@@ -1,0 +1,2 @@
+class Fajitas < ApplicationRecord
+end

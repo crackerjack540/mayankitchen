@@ -1,0 +1,32 @@
+<%= form_with(model: quesadilla, local: true) do |form| %>
+  <% if quesadilla.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(quesadilla.errors.count, "error") %> prohibited this quesadilla from being saved:</h2>
+
+      <ul>
+      <% quesadilla.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :quesadilla_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :quesadilla_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price, id: :quesadilla_price %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

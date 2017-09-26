@@ -1,0 +1,32 @@
+<%= form_with(model: fajita, local: true) do |form| %>
+  <% if fajita.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(fajita.errors.count, "error") %> prohibited this fajita from being saved:</h2>
+
+      <ul>
+      <% fajita.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :fajita_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :fajita_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price, id: :fajita_price %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

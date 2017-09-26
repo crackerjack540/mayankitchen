@@ -1,0 +1,2 @@
+class Chimichangas < ApplicationRecord
+end

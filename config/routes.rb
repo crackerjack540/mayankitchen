@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  resources :desserts
+  resources :brunches
+  resources :lunches
+  resources :drinks
+  resources :enchiladas
+  resources :quesadillas
+  resources :tacos
+  resources :chimichangas
+  resources :fajitas
   resources :sides
   resources :seafoods
   resources :porks

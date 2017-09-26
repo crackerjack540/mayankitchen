@@ -1,0 +1,2 @@
+class Quesadillas < ApplicationRecord
+end

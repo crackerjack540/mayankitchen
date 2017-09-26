@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Enchiladas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @enchiladas.each do |enchilada| %>
+      <tr>
+        <td><%= enchilada.title %></td>
+        <td><%= enchilada.description %></td>
+        <td><%= enchilada.price %></td>
+        <td><%= link_to 'Show', enchilada %></td>
+        <td><%= link_to 'Edit', edit_enchilada_path(enchilada) %></td>
+        <td><%= link_to 'Destroy', enchilada, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Enchilada', new_enchilada_path %>

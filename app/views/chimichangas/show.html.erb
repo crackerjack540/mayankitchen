@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @chimichanga.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @chimichanga.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @chimichanga.price %>
+</p>
+
+<%= link_to 'Edit', edit_chimichanga_path(@chimichanga) %> |
+<%= link_to 'Back', chimichangas_index_path %>

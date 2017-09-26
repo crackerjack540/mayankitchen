@@ -16,6 +16,12 @@ class DinnersController < ApplicationController
     @porks = Pork.all
     @seafoods = Seafood.all
     @sides = Side.all
+    @fajitas = Fajitas.all
+    @chimichangas = Chimichangas.all
+    @tacos = Taco.all
+    @quesadillas = Quesadillas.all
+    @enchiladas = Enchiladas.all
+    @drinks = Drink.all
 
 
   end

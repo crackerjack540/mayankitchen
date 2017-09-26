@@ -1,0 +1,2 @@
+class Brunch < ApplicationRecord
+end

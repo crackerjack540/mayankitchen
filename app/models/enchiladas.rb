@@ -1,0 +1,2 @@
+class Enchiladas < ApplicationRecord
+end
