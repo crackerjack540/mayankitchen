@@ -1,0 +1,2 @@
+class Soup < ApplicationRecord
+end

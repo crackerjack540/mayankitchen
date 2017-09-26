@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @dip.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @dip.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @dip.price %>
+</p>
+
+<%= link_to 'Edit', edit_dip_path(@dip) %> |
+<%= link_to 'Back', dips_path %>

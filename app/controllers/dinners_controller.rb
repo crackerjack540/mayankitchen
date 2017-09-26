@@ -5,8 +5,11 @@ class DinnersController < ApplicationController
   # GET /dinners.json
   def index
     @dinners = Dinner.all
-        @appetizers = Appetizer.all
+    @appetizers = Appetizer.all
     @tapas = Tapa.all
+    @soups = Soup.all
+    @dips = Dip.all
+
 
   end
 

@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Sopas (Soups)</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @soups.each do |soup| %>
+      <tr>
+        <td><%= soup.title %></td>
+        <td><%= soup.description %></td>
+        <td><%= soup.price %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
