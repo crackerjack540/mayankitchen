@@ -1,5 +1,4 @@
 class DinnersController < ApplicationController
-  before_action :set_dinner, only: [:show, :edit, :update, :destroy]
 
   # GET /dinners
   # GET /dinners.json
@@ -22,14 +21,30 @@ class DinnersController < ApplicationController
     @quesadillas = Quesadillas.all
     @enchiladas = Enchiladas.all
     @drinks = Drink.all
-
-
   end
 
 
   # GET /dinners/1
   # GET /dinners/1.json
   def show
+    @appetizers = Appetizer.all
+    @tapas = Tapa.all
+    @soups = Soup.all
+    @dips = Dip.all
+    @nachos = Nacho.all
+    @salads = Salad.all
+    @steaks = Steak.all
+    @chickens = Chicken.all
+    @porks = Pork.all
+    @seafoods = Seafood.all
+    @sides = Side.all
+    @fajitas = Fajitas.all
+    @chimichangas = Chimichangas.all
+    @tacos = Taco.all
+    @quesadillas = Quesadillas.all
+    @enchiladas = Enchiladas.all
+    @drinks = Drink.all
+
   end
 
   # GET /dinners/new
@@ -83,12 +98,6 @@ class DinnersController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_dinner
-      @dinner = Dinner.find(params[:id])
-    end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def dinner_params
-      params.require(:dinner).permit(:title, :description)
-    end
 end

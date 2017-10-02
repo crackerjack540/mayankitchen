@@ -5,26 +5,21 @@
 
 <h1>Antojiotos (Appetizers)</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Price</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <% @appetizers.each do |appetizer| %>
+<div class="card-deck">
+  <div class="col-sm-6 col-lg-4">
+  <div class="card text-center"> 
+    <div class="card-block">
 
-  <tbody>
-    <% @appetizers.each do |appetizer| %>
-      <tr>
-        <td><%= appetizer.title %></td>
-        <td><%= appetizer.description %></td>
-        <td><%= appetizer.price %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <h3 class="card-title"><%=  appetizer.title %></h3>
+      <h5><%=  appetizer.description %></h5>
+
+    </div>
+  </div>
+</div>
+</div>
+</div>
+      <% end %>
 
 <h1>Tapas</h1>
 
