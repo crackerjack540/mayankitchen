@@ -4,4 +4,7 @@ class MainController < ApplicationController
 
   def menu
   end
+
+  def apply
+  end
 end

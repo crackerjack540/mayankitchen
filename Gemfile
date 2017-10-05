@@ -31,6 +31,7 @@ gem 'jquery-rails'
 gem "jquery-slick-rails"
 gem 'popper_js'
 
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
