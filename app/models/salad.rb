@@ -1,2 +1,0 @@
-class Salad < ApplicationRecord
-end

@@ -1,2 +1,0 @@
-class Tapa < ApplicationRecord
-end

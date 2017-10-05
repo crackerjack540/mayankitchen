@@ -1,2 +1,0 @@
-class Dessert < ApplicationRecord
-end

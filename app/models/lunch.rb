@@ -1,2 +1,0 @@
-class Lunch < ApplicationRecord
-end

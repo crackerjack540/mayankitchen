@@ -1,2 +1,0 @@
-class Side < ApplicationRecord
-end

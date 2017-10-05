@@ -1,2 +1,0 @@
-class Appetizer < ApplicationRecord
-end

@@ -1,2 +1,0 @@
-class Dip < ApplicationRecord
-end

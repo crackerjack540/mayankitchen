@@ -1,2 +1,0 @@
-class Nacho < ApplicationRecord
-end
