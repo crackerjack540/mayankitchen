@@ -7,6 +7,8 @@ class CreateMenuItems < ActiveRecord::Migration[5.1]
       t.string :type
       t.string :label
 
+      t.references :menu_item
+
       t.timestamps
     end
   end
