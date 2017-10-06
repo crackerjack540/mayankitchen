@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Menu Items</h1>
+<h1>Dinner Menu</h1>
 
 <div class="container">
 <div class="row">
@@ -18,5 +18,8 @@
 </div>
 </div>
 <br>
+<%= @appetizers.each do |appetizer| %>
+<%= menu_item.title %>
+<% end %>
 
 <%= link_to 'New Menu Item', new_menu_item_path %>

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :menu_items
 
+  resources :menu_items
   get 'main/dinner'
 
   root 'main#home'

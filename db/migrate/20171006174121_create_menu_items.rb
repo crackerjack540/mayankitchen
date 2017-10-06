@@ -4,8 +4,8 @@ class CreateMenuItems < ActiveRecord::Migration[5.1]
       t.string :title
       t.text :description
       t.string :price
-      t.string :menu_type
-      t.string :food_type
+      t.string :type
+      t.string :label
 
       t.timestamps
     end

@@ -4,12 +4,12 @@ one:
   title: MyString
   description: MyText
   price: MyString
-  menu_type: MyString
-  food_type: MyString
+  type: 
+  label: MyString
 
 two:
   title: MyString
   description: MyText
   price: MyString
-  menu_type: MyString
-  food_type: MyString
+  type: 
+  label: MyString

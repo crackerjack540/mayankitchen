@@ -1,2 +1,0 @@
-class Chimichangas < ApplicationRecord
-end

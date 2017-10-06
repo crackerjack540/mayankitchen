@@ -10,6 +10,7 @@ class MainController < ApplicationController
 
   def dinner
      @menu_items = MenuItem.all
+     @appetizers = Appetizer.all
 
   end
 
