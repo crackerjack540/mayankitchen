@@ -4,8 +4,8 @@
 
 <div class="container">
 <div class="row">
-  <%= @menu_items.each do |menu_item| %>
-  
+  <% @menu_items.each do |menu_item| %>
+
     <div class="col-sm-6 col-lg-4">
       <div class="card text-center">
         <div class="card block">
@@ -18,8 +18,8 @@
 </div>
 </div>
 <br>
-<%= @appetizers.each do |appetizer| %>
-<%= menu_item.title %>
+<% @appetizers.each do |appetizer| %>
+<%= appetizer.title %>
 <% end %>
 
 <%= link_to 'New Menu Item', new_menu_item_path %>
