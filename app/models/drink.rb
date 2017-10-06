@@ -1,0 +1,2 @@
+class Drink < MenuItem
+end
