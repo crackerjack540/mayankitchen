@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Menu Items</h1>
+
+<div class="container">
+<div class="row">
+  <%= @menu_items.each do |menu_item| %>
+  
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= menu_item.title %></h4>
+          <p class="card-text"><%= menu_item.description %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+<br>
+
+<%= link_to 'New Menu Item', new_menu_item_path %>
