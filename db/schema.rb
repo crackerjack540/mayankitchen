@@ -18,10 +18,8 @@ ActiveRecord::Schema.define(version: 20171006174121) do
     t.string "price"
     t.string "type"
     t.string "label"
-    t.integer "menu_item_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["menu_item_id"], name: "index_menu_items_on_menu_item_id"
   end
 
 end
