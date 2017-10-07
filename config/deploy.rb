@@ -1,7 +1,7 @@
 # config valid only for current version of Capistrano
 lock "3.9.1"
 
-set :application, "mayan_kitchen"
+set :application, "mayankitchen"
 set :repo_url, "https://github.com/crackerjack540/mayankitchen"
 
 # Default branch is :master
