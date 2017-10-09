@@ -7,7 +7,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: mayan_test 
+  database: test_dev 
   pool: 5
-  username: mayan
-  password: allew1
+  username: imerald
+  password: wordpass
