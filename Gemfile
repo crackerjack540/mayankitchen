@@ -21,6 +21,8 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'jquery-rails'
 gem "jquery-slick-rails"
 gem 'popper_js'
+gem 'simple_form'
+
 
 gem 'capistrano', '~> 3.7', '>= 3.7.1'
 gem 'capistrano-rails', '~> 1.2'
