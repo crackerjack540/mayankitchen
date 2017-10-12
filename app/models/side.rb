@@ -1,0 +1,2 @@
+class Side < MenuItem
+end

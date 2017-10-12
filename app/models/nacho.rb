@@ -1,0 +1,2 @@
+class Nacho < MenuItem
+end

@@ -2,24 +2,295 @@
 
 <h1>Dinner Menu</h1>
 
+<h2>Antojiotos (Appetizers)</h2>
+
 <div class="container">
 <div class="row">
-  <% @menu_items.each do |menu_item| %>
+  <% @appetizers.each do |appetizer| %>
 
     <div class="col-sm-6 col-lg-4">
       <div class="card text-center">
         <div class="card block">
-          <h4 class="card-title"><%= menu_item.title %></h4>
-          <p class="card-text"><%= menu_item.description %></p>
+          <h4 class="card-title"><%= appetizer.title %></h4>
+          <p class="card-text"><%= appetizer.description %></p>
         </div>
       </div>
     </div>
   <% end %>
 </div>
 </div>
-<br>
-<% @appetizers.each do |appetizer| %>
-<%= appetizer.title %>
-<% end %>
 
-<%= link_to 'New Menu Item', new_menu_item_path %>
+<h2>Tapas</h2>
+
+<div class="container">
+<div class="row">
+  <% @tapas.each do |tapa| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= tapa.title %></h4>
+          <p class="card-text"><%= tapa.description %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<h2>Sopas (Soups)</h2>
+
+<div class="container">
+<div class="row">
+  <% @soups.each do |soup| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= soup.title %></h4>
+          <p class="card-text"><%= soup.description %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<h2>Favorite Dips</h2>
+<h4>Served with Tri Color Tortilla Chips</h4>
+
+<div class="container">
+<div class="row">
+  <% @dips.each do |dip| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= dip.title %></h4>
+          <p class="card-text"><%= dip.description %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<h2>Nachos</h2>
+
+<div class="container">
+<div class="row">
+  <% @nachos.each do |nacho| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= nacho.title %></h4>
+          <p class="card-text"><%= nacho.description %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<h2>Ensaladas (Salads)</h2>
+
+<div class="container">
+<div class="row">
+  <% @salads.each do |salad| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= salad.title %></h4>
+          <p class="card-text"><%= salad.description %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<h2>Bisteks (Steaks)</h2>
+
+<div class="container">
+<div class="row">
+  <% @steaks.each do |steak| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= steak.title %></h4>
+          <p class="card-text"><%= steak.description %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<h2>Pollo (Chicken)</h2>
+
+<div class="container">
+<div class="row">
+  <% @chickens.each do |chicken| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= chicken.title %></h4>
+          <p class="card-text"><%= chicken.description %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<h2>Cerdo (Pork)</h2>
+
+<div class="container">
+<div class="row">
+  <% @porks.each do |pork| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= pork.title %></h4>
+          <p class="card-text"><%= pork.description %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<h2>Mariscos (Seafood)</h2>
+
+<div class="container">
+<div class="row">
+  <% @seafoods.each do |seafood| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= seafood.title %></h4>
+          <p class="card-text"><%= seafood.description %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<h2>Side Dishes</h2>
+
+<div class="container">
+<div class="row">
+  <% @sides.each do |side| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= side.title %></h4>
+          <p class="card-text"><%= side.description %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<h1> Otras Especilidades</h1>
+<h2>Other Specialties</h2>
+
+<h2>Fajitas</h2>
+
+<div class="container">
+<div class="row">
+  <% @fajitas.each do |fajita| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= fajita.title %></h4>
+          <p class="card-text"><%= fajita.description %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<h2>Chimichangas</h2>
+
+<div class="container">
+<div class="row">
+  <% @chimichangas.each do |chimichanga| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= chimichanga.title %></h4>
+          <p class="card-text"><%= chimichanga.description %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<h2>Tacos</h2>
+
+<div class="container">
+<div class="row">
+  <% @tacos.each do |taco| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= taco.title %></h4>
+          <p class="card-text"><%= taco.description %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<h2>Quesadillas</h2>
+
+<div class="container">
+<div class="row">
+  <% @quesadillas.each do |quesadilla| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= quesadilla.title %></h4>
+          <p class="card-text"><%= quesadilla.description %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<h2>Enchiladas</h2>
+
+<div class="container">
+<div class="row">
+  <% @enchiladas.each do |enchilada| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= enchilada.title %></h4>
+          <p class="card-text"><%= enchilada.description %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+

@@ -1,0 +1,2 @@
+class Quesadilla < MenuItem
+end

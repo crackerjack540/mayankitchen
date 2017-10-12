@@ -1,0 +1,2 @@
+class Chimichanga < MenuItem
+end

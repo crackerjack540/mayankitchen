@@ -1,0 +1,2 @@
+class Steak < MenuItem
+end

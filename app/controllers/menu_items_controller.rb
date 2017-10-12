@@ -5,6 +5,7 @@ class MenuItemsController < ApplicationController
   # GET /menu_items.json
   def index
     @menu_items = MenuItem.all
+    @appetizers = Appetizer.all
     @drinks = Drink.all
     @dinners = Dinner.all
   end
@@ -30,8 +31,8 @@ class MenuItemsController < ApplicationController
 
     respond_to do |format|
       if @menu_item.save
-        format.html { redirect_to @menu_item, notice: 'Menu item was successfully created.' }
-        format.json { render :show, status: :created, location: @menu_item }
+        format.html { redirect_to menu_items_path, notice: 'Menu item was successfully created.' }
+        format.json { render :index, status: :created, location: @menu_item }
       else
         format.html { render :new }
         format.json { render json: @menu_item.errors, status: :unprocessable_entity }

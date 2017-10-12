@@ -1,0 +1,2 @@
+class Tapa < MenuItem
+end

@@ -1,0 +1,2 @@
+class Enchilada < MenuItem
+end

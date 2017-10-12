@@ -1,0 +1,2 @@
+class Fajita < MenuItem
+end
