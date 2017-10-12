@@ -7,7 +7,6 @@ class MenuItemsController < ApplicationController
     @menu_items = MenuItem.all
     @appetizers = Appetizer.all
     @drinks = Drink.all
-    @dinners = Dinner.all
   end
 
   # GET /menu_items/1
@@ -45,11 +44,11 @@ class MenuItemsController < ApplicationController
   def update
     respond_to do |format|
       if @menu_item.update(menu_item_params)
-        format.html { redirect_to @menu_item, notice: 'Menu item was successfully updated.' }
+        format.html { redirect_to @menu_item_path, notice: 'Menu item was successfully updated.' }
         format.json { render :show, status: :ok, location: @menu_item }
       else
         format.html { render :edit }
-        format.json { render json: @menu_item.errors, status: :unprocessable_entity }
+        format.json { render json: @menu_items.errors, status: :unprocessable_entity }
       end
     end
   end

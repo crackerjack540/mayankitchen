@@ -1,22 +1,6 @@
 Rails.application.routes.draw do
 
   resources :menu_items
-  resources :appetizers
-  resources :tapas
-  resources :soups
-  resources :dips
-  resources :nachos
-  resources :salads
-  resources :steaks
-  resources :chickens
-  resources :porks
-  resources :seafoods
-  resources :sides
-  resources :fajitas
-  resources :chimichangas
-  resources :tacos
-  resources :quesadillas
-  resources :enchiladas
 
   get 'main/dinner'
 

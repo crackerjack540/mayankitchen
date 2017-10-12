@@ -46,3 +46,20 @@ h1, h2, h3, h4, h5, h6, p {
 .card {
     background: sandybrown;
     }
+
+.menu-head {
+     font: 100 40px/1.5 'Pacifico', Helvetica, sans-serif;
+  color: black;
+  text-shadow: 4px 4px 4px rgba(1,1,1,0.1), 3px 3px 0px rgba(1,1,1,1.05);
+  background: none;
+  border-style: solid;
+    border-top:  black;
+  text-align: center;
+}
+
+.card-title {
+     font: 100 25px/1.5 'Pacifico', Helvetica, sans-serif;
+  color: black;
+  text-shadow: 1px 1px 1px rgba(1,1,1,0.1), 2px 2px 0px rgba(1,1,1,1.05);
+
+}
