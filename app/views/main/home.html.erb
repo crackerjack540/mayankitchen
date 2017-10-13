@@ -1,4 +1,6 @@
-
+<% content_for :head do %>
+  <meta name="turbolinks-cache-control" content="no-cache">
+<% end %>
 <div class="container">
   <h1 class="menu-title"> Welcome to</br> Mayan Kitchen!</h1>
 </div>
@@ -7,7 +9,28 @@
   <%= image_tag 'mayan-logo.jpg' %>
 </div>
 
-      <h2 class="menu-title">Hours</h2></br>
+
+<div class="carousel">
+  <div><%= image_tag 'food01.jpg' %></div>
+  <div><%= image_tag 'food02.jpg' %></div>
+  <div><%= image_tag 'food03.jpg' %></div>
+</div>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.carousel').slick({
+          infinite: true,
+          speed: 300,
+          fade: true,
+          slidesToShow: 1,
+          adaptiveHeight: true
+      });
+    });
+  </script>
+
+
+
+<h2 class="menu-title">Hours</h2></br>
 
 <div class="container">
   <div class="row">
@@ -47,11 +70,12 @@
       </div>
     </div>
    </div>
-    <div class="col-sm-6">
+
       <h2 class="menu-title"> Follow Us!</h2>
+      <div class="social">
     <%= image_tag 'facebook.png' %>
     <%= image_tag 'twitter.png' %>
-
+      </div>
   </div>
 </div>
 </div>

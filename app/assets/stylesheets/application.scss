@@ -1,4 +1,6 @@
 @import "bootstrap";
+@import 'slick';
+@import 'slick-theme';
 
 
 body {
@@ -101,4 +103,18 @@ form {
     margin-left: auto;
     margin-right: auto;
     width: 60%;
+}
+
+.social {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+
+}
+
+.carousel {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    width: 30%;
 }
