@@ -100,21 +100,17 @@ form {
 }
 
 .logo {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
+float: right;
+  padding-top: 25px;
+  padding-right: 25px;
+  }
 
 .social {
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
+    padding-left: 25px;
 
 }
 
 .carousel {
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 25px;
-    width: 40%;
+    padding-left: 25px;
 }
