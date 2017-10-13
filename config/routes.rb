@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :models
   root 'main#apply'
 
   get "home" => 'main#home'
@@ -17,6 +18,8 @@ Rails.application.routes.draw do
   get "lunch" => 'main#lunch'
 
   get "drinks" => 'main#tequila'
+
+  get "signup" => 'models#sign_up'
 
     resources :menu_items
 
