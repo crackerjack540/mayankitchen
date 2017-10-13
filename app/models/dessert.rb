@@ -1,0 +1,2 @@
+class Dessert < MenuItem
+end

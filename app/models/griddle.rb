@@ -1,0 +1,2 @@
+class Griddle < MenuItem
+end

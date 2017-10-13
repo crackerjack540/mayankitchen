@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Dinner Menu</h1>
+<h1 class="menu-title">Dinner Menu</h1>
 
 <h2 class="menu-head">Antojiotos (Appetizers)</h2>
 
@@ -294,3 +294,22 @@
 </div>
 </div>
 
+<h2 class="menu-head"> Bebidas (Drinks)</h2>
+
+<div class="container">
+  <div class="row">
+  <% @drinks.each do |drink| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= drink
+          .title %></h4>
+          <p class="card-text"><%= drink.description %></p>
+          <p class="card-footer"> $<%= drink.price %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>

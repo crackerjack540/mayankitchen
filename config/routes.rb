@@ -1,20 +1,25 @@
 Rails.application.routes.draw do
 
-  resources :menu_items
-
-  get 'main/dinner'
-
   root 'main#apply'
 
-  get 'main/menu'
+  get "home" => 'main#home'
 
-  get 'main/apply', as: 'apply'
+  get "dinner" => 'main#dinner'
 
-  get 'main/dessert'
+  get "menu" => 'main#menu'
 
-  get 'main/brunch'
+  get "apply" => 'main#apply'
 
-  get 'main/lunch'
+  get "dessert" => 'main#dessert'
+
+  get "brunch" => 'main#brunch'
+
+  get "lunch" => 'main#lunch'
+
+  get "drinks" => 'main#tequila'
+
+    resources :menu_items
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

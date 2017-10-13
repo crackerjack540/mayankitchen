@@ -26,16 +26,29 @@ class MainController < ApplicationController
      @tacos = Taco.all
      @quesadillas = Quesadilla.all
      @enchiladas = Enchilada.all
+     @drinks = Drink.all
 
   end
 
   def brunch
+    @eggs = Egg.all
+    @skillets = Skillet.all
+    @griddles = Griddle.all
+    @omelettes = Omelette.all
+    @brunch_sides = BrunchSide.all
+    @drinks = Drink.all
   end
 
   def dessert
+    @desserts = Dessert.all
   end
 
   def lunch
+    @lunches = Lunch.all
+    @drinks = Drink.all
+  end
+
+  def tequila
   end
 
 end

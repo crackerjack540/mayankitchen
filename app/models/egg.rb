@@ -1,0 +1,2 @@
+class Egg < MenuItem
+end

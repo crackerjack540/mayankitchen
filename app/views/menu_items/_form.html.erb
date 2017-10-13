@@ -1,42 +1,13 @@
-<%= form_with(model: menu_item, local: true) do |form| %>
-  <% if menu_item.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(menu_item.errors.count, "error") %> prohibited this menu_item from being saved:</h2>
 
-      <ul>
-      <% menu_item.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :menu_item_title %>
-  </div>
-
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description, id: :menu_item_description %>
-  </div>
-
-  <div class="field">
-    <%= form.label :price %>
-    <%= form.text_field :price, id: :menu_item_price %>
-  </div>
-
-  <div class="field">
-    <%= form.label :type %>
-    <%= form.text_field :type, id: :menu_item_type %>
-  </div>
-
-  <div class="field">
-    <%= form.label :label %>
-    <%= form.text_field :label, id: :menu_item_label %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+<div class="container">
+<%= simple_form_for @menu_item do |f| %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <%= f.input :price %>
+  <%= f.input :type, :collection => ['Appetizer', 'BrunchSide', 'Chicken','Chimichanga', 'Dessert', 'Dip', 'Drink', 'Egg', 'Enchilada', 'Fajita', 'Griddle', 'Lunch', 'Nacho', 'Omelette', 'Pork', 'Quesadilla', 'Salad', 'Seafood', 'Side', 'Skillet', 'Soup', 'Steak', 'Taco', 'Tapa']  %>
+  <%= f.input :label %>
+  <%= f.button :submit %>
 <% end %>
+</div>
+

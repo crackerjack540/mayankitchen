@@ -1,33 +1,58 @@
-<% content_for :head do %>
-  <meta name="turbolinks-cache-control" content="no-cache">
-<% end %>
 
 <div class="container">
-  <h1 id="title"> Welcome to the Mayan Kitchen!</h1>
+  <h1 class="menu-title"> Welcome to</br> Mayan Kitchen!</h1>
 </div>
 
-<div class="container" id="slick">
+<div class="logo">
+  <%= image_tag 'mayan-logo.jpg' %>
+</div>
+
+      <h2 class="menu-title">Hours</h2></br>
 
 <div class="container">
   <div class="row">
     <div class="col-sm-6">
-
-      <h2>Hours</h2>
-      <h3>Monday - Thursday</h3>
-      <h4>11:00AM - 10:00PM</h4>
-      <h3>Friday</h3>
-      <h4>11:00AM - 12:00AM</h4>
-      <h3>Saturday</h3>
-      <h4>09:00AM - 12:00AM</h4>
-      <h3>Sunday</h3>
-      <h4>09:00AM - 10:00PM</h4>
-
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title">Monday - Thursday</h4>
+          <p class="card-text">11:00AM - 10:00PM</p>
+        </div>
+      </div>
     </div>
+
     <div class="col-sm-6">
-      <h2> Follow Us!</h2>
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title">Friday</h4>
+          <p class="card-text">11:00AM - 12:00AM</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title">Saturday</h4>
+          <p class="card-text">09:00AM - 12:00AM</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title">Sunday</h4>
+          <p class="card-text">09:00AM - 10:00PM</p>
+        </div>
+      </div>
+    </div>
+   </div>
+    <div class="col-sm-6">
+      <h2 class="menu-title"> Follow Us!</h2>
     <%= image_tag 'facebook.png' %>
     <%= image_tag 'twitter.png' %>
 
   </div>
+</div>
 </div>
 

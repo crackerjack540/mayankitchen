@@ -1,0 +1,2 @@
+class BrunchSide < MenuItem
+end

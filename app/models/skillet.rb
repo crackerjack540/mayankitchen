@@ -1,0 +1,2 @@
+class Skillet < MenuItem
+end

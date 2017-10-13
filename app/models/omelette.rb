@@ -1,0 +1,2 @@
+class Omelette < MenuItem
+end
