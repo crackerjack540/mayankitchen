@@ -18,308 +18,234 @@
 
 <h2 class="menu-head">Tapas</h2>
 
-<div class="container">
-<div class="row">
   <% @tapas.each do |tapa| %>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="card text-center">
-        <div class="card block">
-          <h4 class="card-title"><%= tapa.title %></h4>
-          <p class="card-text"><%= tapa.description %></p>
-          <p class="card-text">$<%= tapa.price %></p>
-        </div>
-      </div>
-    </div>
+  <table class="menu">
+    <tr>
+      <th><p class="card-title"><%= tapa.title %></p></th>
+      <th><p class="price">$<%= tapa.price %></p></th>
+    </tr>
+    <tr>
+      <th ><p class="description"><%= tapa.description %></p></th>
+    </tr>
+  </table>
   <% end %>
-</div>
-</div>
+
 
 <h2 class="menu-head">Sopas (Soups)</h2>
 
-<div class="container">
-<div class="row">
   <% @soups.each do |soup| %>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="card text-center">
-        <div class="card block">
-          <h4 class="card-title"><%= soup.title %></h4>
-          <p class="card-text"><%= soup.description %></p>
-          <p class="card-text">$<%= soup.price %></p>
-        </div>
-      </div>
-    </div>
+  <table class="menu">
+    <tr>
+      <th><p class="card-title"><%= soup.title %></p></th>
+      <th><p class="price">$<%= soup.price %></p></th>
+    </tr>
+    <tr>
+      <th ><p class="description"><%= soup.description %></p></th>
+    </tr>
+  </table>
   <% end %>
-</div>
-</div>
+
 
 <h2 class="menu-head">Favorite Dips</h2>
 <h4>Served with Tri Color Tortilla Chips</h4>
 
-<div class="container">
-<div class="row">
   <% @dips.each do |dip| %>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="card text-center">
-        <div class="card block">
-          <h4 class="card-title"><%= dip.title %></h4>
-          <p class="card-text"><%= dip.description %></p>
-          <p class="card-text">$<%= dip.price %></p>
-        </div>
-      </div>
-    </div>
+  <table class="menu">
+    <tr>
+      <th><p class="card-title"><%= dip.title %></p></th>
+      <th><p class="price">$<%= dip.price %></p></th>
+    </tr>
+    <tr>
+      <th ><p class="description"><%= dip.description %></p></th>
+    </tr>
+  </table>
   <% end %>
-</div>
-</div>
 
 <h2 class="menu-head">Nachos</h2>
 
-<div class="container">
-<div class="row">
   <% @nachos.each do |nacho| %>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="card text-center">
-        <div class="card block">
-          <h4 class="card-title"><%= nacho.title %></h4>
-          <p class="card-text"><%= nacho.description %></p>
-          <p class="card-text">$<%= nacho.price %></p>
-        </div>
-      </div>
-    </div>
+  <table class="menu">
+    <tr>
+      <th><p class="card-title"><%= nacho.title %></p></th>
+      <th><p class="price">$<%= nacho.price %></p></th>
+    </tr>
+    <tr>
+      <th ><p class="description"><%= nacho.description %></p></th>
+    </tr>
+  </table>
   <% end %>
-</div>
-</div>
+
 
 <h2 class="menu-head">Ensaladas (Salads)</h2>
 
-<div class="container">
-<div class="row">
   <% @salads.each do |salad| %>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="card text-center">
-        <div class="card block">
-          <h4 class="card-title"><%= salad.title %></h4>
-          <p class="card-text"><%= salad.description %></p>
-          <p class="card-text">$<%= salad.price %></p>
-        </div>
-      </div>
-    </div>
+  <table class="menu">
+    <tr>
+      <th><p class="card-title"><%= salad.title %></p></th>
+      <th><p class="price">$<%= salad.price %></p></th>
+    </tr>
+    <tr>
+      <th ><p class="description"><%= salad.description %></p></th>
+    </tr>
+  </table>
   <% end %>
-</div>
-</div>
 
 <h2 class="menu-head">Bisteks (Steaks)</h2>
 
-<div class="container">
-<div class="row">
   <% @steaks.each do |steak| %>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="card text-center">
-        <div class="card block">
-          <h4 class="card-title"><%= steak.title %></h4>
-          <p class="card-text"><%= steak.description %></p>
-          <p class="card-text">$<%= steak.price %></p>
-        </div>
-      </div>
-    </div>
+  <table class="menu">
+    <tr>
+      <th><p class="card-title"><%= steak.title %></p></th>
+      <th><p class="price">$<%= steak.price %></p></th>
+    </tr>
+    <tr>
+      <th ><p class="description"><%= steak.description %></p></th>
+    </tr>
+  </table>
   <% end %>
-</div>
-</div>
 
 <h2 class="menu-head">Pollo (Chicken)</h2>
 
-<div class="container">
-<div class="row">
   <% @chickens.each do |chicken| %>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="card text-center">
-        <div class="card block">
-          <h4 class="card-title"><%= chicken.title %></h4>
-          <p class="card-text"><%= chicken.description %></p>
-          <p class="card-text">$<%= chicken.price %></p>
-        </div>
-      </div>
-    </div>
+  <table class="menu">
+    <tr>
+      <th><p class="card-title"><%= chicken.title %></p></th>
+      <th><p class="price">$<%= chicken.price %></p></th>
+    </tr>
+    <tr>
+      <th ><p class="description"><%= chicken.description %></p></th>
+    </tr>
+  </table>
   <% end %>
-</div>
-</div>
 
 <h2 class="menu-head">Cerdo (Pork)</h2>
 
-<div class="container">
-<div class="row">
   <% @porks.each do |pork| %>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="card text-center">
-        <div class="card block">
-          <h4 class="card-title"><%= pork.title %></h4>
-          <p class="card-text"><%= pork.description %></p>
-           <p class="card-text">$<%= pork.price %></p>
-        </div>
-      </div>
-    </div>
+  <table class="menu">
+    <tr>
+      <th><p class="card-title"><%= pork.title %></p></th>
+      <th><p class="price">$<%= pork.price %></p></th>
+    </tr>
+    <tr>
+      <th ><p class="description"><%= pork.description %></p></th>
+    </tr>
+  </table>
   <% end %>
-</div>
-</div>
+
 
 <h2 class="menu-head">Mariscos (Seafood)</h2>
 
-<div class="container">
-<div class="row">
   <% @seafoods.each do |seafood| %>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="card text-center">
-        <div class="card block">
-          <h4 class="card-title"><%= seafood.title %></h4>
-          <p class="card-text"><%= seafood.description %></p>
-          <p class="card-text">$<%= seafood.price %></p>
-        </div>
-      </div>
-    </div>
+  <table class="menu">
+    <tr>
+      <th><p class="card-title"><%= seafood.title %></p></th>
+      <th><p class="price">$<%= seafood.price %></p></th>
+    </tr>
+    <tr>
+      <th ><p class="description"><%= seafood.description %></p></th>
+    </tr>
+  </table>
   <% end %>
-</div>
-</div>
+
 
 <h2 class="menu-head">Side Dishes</h2>
 
-<div class="container">
-<div class="row">
   <% @sides.each do |side| %>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="card text-center">
-        <div class="card block">
-          <h4 class="card-title"><%= side.title %></h4>
-          <p class="card-text"><%= side.description %></p>
-          <p class="card-text">$<%= side.price %></p>
-        </div>
-      </div>
-    </div>
+  <table class="menu">
+    <tr>
+      <th><p class="card-title"><%= side.title %></p></th>
+      <th><p class="price">$<%= side.price %></p></th>
+    </tr>
+    <tr>
+      <th ><p class="description"><%= side.description %></p></th>
+    </tr>
+  </table>
   <% end %>
-</div>
-</div>
 
-<h1 class="menu-head"> Otras Especilidades </br> (Other Specialties)</h1>
 
-<h2>Fajitas</h2>
+<h1 class="menu-title"> Otras Especilidades </br> (Other Specialties)</h1>
 
-<div class="container">
-<div class="row">
+<h2 class="menu-head">Fajitas</h2>
+
   <% @fajitas.each do |fajita| %>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="card text-center">
-        <div class="card block">
-          <h4 class="card-title"><%= fajita.title %></h4>
-          <p class="card-text"><%= fajita.description %></p>
-          <p class="card-text">$<%= fajita.price %></p>
-        </div>
-      </div>
-    </div>
+  <table class="menu">
+    <tr>
+      <th><p class="card-title"><%= fajita.title %></p></th>
+      <th><p class="price">$<%= fajita.price %></p></th>
+    </tr>
+    <tr>
+      <th ><p class="description"><%= fajita.description %></p></th>
+    </tr>
+  </table>
   <% end %>
-</div>
-</div>
+
 
 <h2 class="menu-head">Chimichangas</h2>
 
-<div class="container">
-<div class="row">
   <% @chimichangas.each do |chimichanga| %>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="card text-center">
-        <div class="card block">
-          <h4 class="card-title"><%= chimichanga.title %></h4>
-          <p class="card-text"><%= chimichanga.description %></p>
-           <p class="card-text">$<%= chimichanga.price %></p>
-        </div>
-      </div>
-    </div>
+  <table class="menu">
+    <tr>
+      <th><p class="card-title"><%= chimichanga.title %></p></th>
+      <th><p class="price">$<%= chimichanga.price %></p></th>
+    </tr>
+    <tr>
+      <th ><p class="description"><%= chimichanga.description %></p></th>
+    </tr>
+  </table>
   <% end %>
-</div>
-</div>
 
 <h2 class="menu-head">Tacos</h2>
 
-<div class="container">
-<div class="row">
   <% @tacos.each do |taco| %>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="card text-center">
-        <div class="card block">
-          <h4 class="card-title"><%= taco.title %></h4>
-          <p class="card-text"><%= taco.description %></p>
-          <p class="card-text">$<%= taco.price %></p>
-        </div>
-      </div>
-    </div>
+  <table class="menu">
+    <tr>
+      <th><p class="card-title"><%= taco.title %></p></th>
+      <th><p class="price">$<%= taco.price %></p></th>
+    </tr>
+    <tr>
+      <th ><p class="description"><%= taco.description %></p></th>
+    </tr>
+  </table>
   <% end %>
-</div>
-</div>
 
 <h2 class="menu-head">Quesadillas</h2>
 
-<div class="container">
-<div class="row">
   <% @quesadillas.each do |quesadilla| %>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="card text-center">
-        <div class="card block">
-          <h4 class="card-title"><%= quesadilla.title %></h4>
-          <p class="card-text"><%= quesadilla.description %></p>
-           <p class="card-text">$<%= quesadilla.price %></p>
-        </div>
-      </div>
-    </div>
+  <table class="menu">
+    <tr>
+      <th><p class="card-title"><%= quesadilla.title %></p></th>
+      <th><p class="price">$<%= quesadilla.price %></p></th>
+    </tr>
+    <tr>
+      <th ><p class="description"><%= quesadilla.description %></p></th>
+    </tr>
+  </table>
   <% end %>
-</div>
-</div>
 
 <h2 class="menu-head">Enchiladas</h2>
 
-<div class="container">
-<div class="row">
   <% @enchiladas.each do |enchilada| %>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="card text-center">
-        <div class="card block">
-          <h4 class="card-title"><%= enchilada.title %></h4>
-          <p class="card-text"><%= enchilada.description %></p>
-          <p class="card-text">$<%= enchilada.price %></p>
-        </div>
-      </div>
-    </div>
+  <table class="menu">
+    <tr>
+      <th><p class="card-title"><%= enchilada.title %></p></th>
+      <th><p class="price">$<%= enchilada.price %></p></th>
+    </tr>
+    <tr>
+      <th ><p class="description"><%= enchilada.description %></p></th>
+    </tr>
+  </table>
   <% end %>
-</div>
-</div>
 
 <h2 class="menu-head"> Bebidas (Drinks)</h2>
 
-<div class="container">
-  <div class="row">
   <% @drinks.each do |drink| %>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="card text-center">
-        <div class="card block">
-          <h4 class="card-title"><%= drink
-          .title %></h4>
-          <p class="card-text"><%= drink.description %></p>
-          <p class="card-footer">$<%= drink.price %></p>
-        </div>
-      </div>
-    </div>
+  <table class="menu">
+    <tr>
+      <th><p class="card-title"><%= drink.title %></p></th>
+      <th><p class="price">$<%= drink.price %></p></th>
+    </tr>
+    <tr>
+      <th ><p class="description"><%= drink.description %></p></th>
+    </tr>
+  </table>
   <% end %>
-</div>
-</div>

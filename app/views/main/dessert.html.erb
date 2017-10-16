@@ -1,19 +1,14 @@
 <h1 class="menu-title">Postres (Desserts)</h1>
 
 
-<div class="container">
-	<div class="row">
   <% @desserts.each do |dessert| %>
-
-    <div class="col-sm-6 col-lg-4">
-      <div class="card text-center">
-        <div class="card block">
-          <h4 class="card-title"><%= dessert.title %></h4>
-          <p class="card-text"><%= dessert.description %></p>
-          <p class="card-footer"> $<%= dessert.price %></p>
-        </div>
-      </div>
-    </div>
+  <table class="menu">
+    <tr>
+      <th><p class="card-title"><%= dessert.title %></p></th>
+      <th><p class="price">$<%= dessert.price %></p></th>
+    </tr>
+    <tr>
+      <th ><p class="description"><%= dessert.description %></p></th>
+    </tr>
+  </table>
   <% end %>
-</div>
-</div>
