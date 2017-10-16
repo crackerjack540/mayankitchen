@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6, p {
 .card-text {
     font: 100 20px/1.5 Times New Roman;
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
 
 }
 
@@ -122,6 +122,10 @@ float: right;
 }
 
 .col-md-6 {
+  padding-bottom: 15px;
+}
+
+.col-sm-6 {
   padding-bottom: 15px;
 }
 
