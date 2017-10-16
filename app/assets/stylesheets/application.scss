@@ -67,12 +67,14 @@ h1, h2, h3, h4, h5, h6, p {
    font: 100 25px/1.5 'Pacifico', Helvetica, sans-serif;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding-left: 15px;
 
 }
 
 .card-text {
     font: 100 20px/1.5 Times New Roman;
     color: white;
+    padding-left: 25px;
 
 }
 
@@ -138,5 +140,9 @@ float: right;
 .menu {
   width: 100%;
   background: sandybrown;
-  margin-left: 25px;
+}
+
+.price {
+  color: white;
+  padding-right: 25px;
 }
