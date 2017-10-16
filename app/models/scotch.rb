@@ -1,0 +1,2 @@
+class Scotch < MenuItem
+end

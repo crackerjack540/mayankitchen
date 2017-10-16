@@ -1,0 +1,2 @@
+class BottleI < MenuItem
+end

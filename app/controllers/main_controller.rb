@@ -49,6 +49,28 @@ class MainController < ApplicationController
   end
 
   def tequila
+    @draft_ds = DraftD.all
+    @draft_is = DraftI.all
+    @bottle_ds = BottleD.all
+    @bottle_is = BottleI.all
+    @wine_rs = WineR.all
+    @wine_ws = WineW.all
+    @sangria_rs = SangriaR.all
+    @sangria_ws = SangriaW.all
+    @margaritas = Margarita.all
+    @tequila_ws = TequilaW.all
+    @tequila_rs = TequilaR.all
+    @tequila_as = TequilaA.all
+    @tequila_ms = TequilaM.all
+    @tequila_ps = TequilaP.all
+    @tequila_us = TequilaU.all
+    @tequila_fs = TequilaF.all
+    @vodkas = Vodka.all
+    @rums = Rum.all
+    @gins = Gin.all
+    @bourbons = Bourbon.all
+    @scotchs = Scotch.all
+    @liqueurs = Liqueur.all
   end
 
 end

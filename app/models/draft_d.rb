@@ -1,0 +1,2 @@
+class DraftD < MenuItem
+end

@@ -1,0 +1,2 @@
+class Rum < MenuItem
+end

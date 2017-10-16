@@ -1,0 +1,2 @@
+class SangriaW < MenuItem
+end

@@ -1,0 +1,2 @@
+class TequilaU < MenuItem
+end

@@ -1,0 +1,2 @@
+class Vodka < MenuItem
+end

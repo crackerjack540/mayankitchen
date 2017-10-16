@@ -1,0 +1,2 @@
+class WineR < MenuItem
+end

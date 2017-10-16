@@ -1,0 +1,2 @@
+class Liqueur < MenuItem
+end

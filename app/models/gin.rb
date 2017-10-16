@@ -1,0 +1,2 @@
+class Gin < MenuItem
+end

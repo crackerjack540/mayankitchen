@@ -1,1 +1,330 @@
-<h1 class="menu-title"> Tequila</h1>
+<h1 class="menu-title"> Beer</h1>
+
+<div class="row">
+  <div class="column">
+<h2 class= "menu-head">Draft Domestic </br> 18 oz $4.00</h2>
+
+  <% @draft_ds.each do |draft_d| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= draft_d.title %></h4>
+        </div>
+      </div>
+    </div>
+    <% end %>
+</div>
+
+<div class="column">
+<h2 class="menu-head"> Draft Imports </br> 18oz. $4.50</h2>
+
+  <% @draft_is.each do |draft_i| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= draft_i.title %></h4>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<div class="row">
+  <div class="column">
+<h2 class= "menu-head">Bottle Domestic </br> $4.50</h2>
+
+  <% @bottle_ds.each do |bottle_d| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= bottle_d.title %></h4>
+        </div>
+      </div>
+    </div>
+    <% end %>
+</div>
+
+<div class="column">
+<h2 class="menu-head"> Bottle Imports </br> $5.00</h2>
+
+  <% @bottle_is.each do |bottle_i| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= bottle_i.title %></h4>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<h1 class= "menu-title"> MICHELADA</h1>
+  <p class="card-title"> MADE WITH SANGRITA LIME JUICE HOT SAUCE AND YOUR FAVORITE BEER</P>
+
+<h2 class="menu-title"> Wine</h2>
+
+<div class="row">
+  <div class="column">
+<h2 class= "menu-head">White</h2>
+
+  <% @wine_ws.each do |wine_w| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= wine_w.title %></h4>
+          <p class="card-footer"><%= wine_w.price %></p>
+          <p class="card-footer"><%= wine_w.label %></p>
+        </div>
+      </div>
+    </div>
+    <% end %>
+</div>
+
+<div class="column">
+<h2 class="menu-head"> Red</h2>
+
+  <% @wine_rs.each do |wine_r| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= wine_r.title %></h4>
+          <p class="card-footer"><%= wine_r.price %></p>
+          <p class="card-footer"><%= wine_r.label %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<h2 class="menu-title"> Sangria</h2>
+
+<div class="row">
+  <div class="column">
+<h2 class= "menu-head">White</h2>
+
+  <% @sangria_ws.each do |sangria_w| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= sangria_w.title %></h4>
+          <p class="card-footer"><%= wine_w.price %></p>
+        </div>
+      </div>
+    </div>
+    <% end %>
+</div>
+
+<div class="column">
+<h2 class="menu-head"> Red</h2>
+
+  <% @sangria_rs.each do |sangria_r| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= sangria_r.title %></h4>
+          <p class="card-footer"><%= sangria_r.price %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<h2 class="menu-title">House Margaritas</h2>
+
+<div class="container">
+	<div class="row">
+  <% @margaritas.each do |margarita| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= margarita.title %></h4>
+          <p class="card-footer"> $<%= margarita.price %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<h1 class="menu-title">Tequilas</h1>
+
+<h2 class="menu-head">Blanco (White)</h2>
+
+<div class="container">
+	<div class="row">
+  <% @tequila_ws.each do |tequila_w| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= tequila_w.title %></h4>
+          <p class="card-footer"> $<%= tequila_w.price %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+
+<h2 class="menu-head">Reposado (Rested)</h2>
+
+<div class="container">
+	<div class="row">
+  <% @tequila_rs.each do |tequila_r| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= tequila_r.title %></h4>
+          <p class="card-footer"> $<%= tequila_r.price %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+
+<h2 class="menu-head">Anejo (Aged)</h2>
+
+<div class="container">
+	<div class="row">
+  <% @tequila_as.each do |tequila_a| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= tequila_a.title %></h4>
+          <p class="card-footer"> $<%= tequila_a.price %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+
+<h2 class="menu-head">Mezcal</h2>
+
+<div class="container">
+	<div class="row">
+  <% @tequila_ms.each do |tequila_m| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= tequila_m.title %></h4>
+          <p class="card-footer"> $<%= tequila_m.price %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+
+<h2 class="menu-head">Premium</h2>
+
+<div class="container">
+	<div class="row">
+  <% @tequila_ps.each do |tequila_p| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= tequila_p.title %></h4>
+          <p class="card-footer"> $<%= tequila_p.price %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+
+<h2 class="menu-head">Ultra Premium</h2>
+
+<div class="container">
+	<div class="row">
+  <% @tequila_us.each do |tequila_u| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= tequila_u.title %></h4>
+          <p class="card-footer"> $<%= tequila_u.price %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<h2 class="menu-head"> Tequila Flights</h2>
+
+<div class="container">
+	<div class="row">
+  <% @tequila_fs.each do |tequila_f| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= tequila_f.title %></h4>
+          <p class="card-footer"> $<%= tequila_f.price %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<h1 class="menu-title">Spirits</h1>
+
+<h2 class="menu-head">Vodka</h2>
+
+<div class="container">
+	<div class="row">
+  <% @vodkas.each do |vodka| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= vodka.title %></h4>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
+
+<h2 class="menu-head"> Rum</h2>
+
+
+
+<h2 class="menu-head">Gin</h2>
+
+
+
+<h2 class="menu-head"> Bourbon / Whiskey</h2>
+
+
+
+<h2 class="menu-head">Scotch</h2>
+
+
+
+<h2 class="menu-head">Liqueurs & Cordials</h2>
