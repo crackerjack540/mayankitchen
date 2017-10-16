@@ -73,7 +73,6 @@ h1, h2, h3, h4, h5, h6, p {
 .card-text {
     font: 100 20px/1.5 Times New Roman;
     color: white;
-    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
 
 }
 
@@ -134,4 +133,10 @@ float: right;
   float: left;
   width: 50%;
   padding-right: 4px; 
+}
+
+.menu {
+  width: 100%;
+  background: sandybrown;
+  margin-left: 25px;
 }
