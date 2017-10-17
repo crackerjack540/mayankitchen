@@ -150,17 +150,20 @@
 
 <h2 class="menu-head">Side Dishes</h2>
 
+<div class="container">
+  <div class="row">
   <% @sides.each do |side| %>
-  <table class="menu">
-    <tr>
-      <th><p class="card-title"><%= side.title %></p></th>
-      <th><p class="price">$<%= side.price %></p></th>
-    </tr>
-    <tr>
-      <th ><p class="description"><%= side.description %></p></th>
-    </tr>
-  </table>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= side.title %>    $<%= side.price %></h4>
+        </div>
+      </div>
+    </div>
   <% end %>
+</div>
+</div>
 
 
 <h1 class="menu-title"> Otras Especilidades </br> (Other Specialties)</h1>
