@@ -64,8 +64,8 @@
 </div>
 </div>
 
-<h1 class= "menu-title"> MICHELADA</h1>
-  <p class="card-title"> MADE WITH SANGRITA LIME JUICE HOT SAUCE AND YOUR FAVORITE BEER</P>
+<h1 class= "menu-head"> MICHELADA</h1>
+  <p class="michelada"> Made With Sangarita Lime Juice Hot Sauce and Your Favorite Beer</P>
 
 <h2 class="menu-title"> Wine</h2>
 
@@ -313,18 +313,89 @@
 
 <h2 class="menu-head"> Rum</h2>
 
+<div class="container">
+	<div class="row">
+  <% @rums.each do |rum| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= rum.title %></h4>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
 
 
 <h2 class="menu-head">Gin</h2>
 
+<div class="container">
+	<div class="row">
+  <% @gins.each do |gin| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= gin.title %></h4>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
 
 
 <h2 class="menu-head"> Bourbon / Whiskey</h2>
 
+<div class="container">
+	<div class="row">
+  <% @bourbons.each do |bourbon| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= bourbon.title %></h4>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
 
 
 <h2 class="menu-head">Scotch</h2>
 
+<div class="container">
+	<div class="row">
+  <% @scotchs.each do |scotch| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= scotch.title %></h4>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
 
 
 <h2 class="menu-head">Liqueurs & Cordials</h2>
+
+<div class="container">
+	<div class="row">
+  <% @liqueurs.each do |liqueur| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= liqueur.title %></h4>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
