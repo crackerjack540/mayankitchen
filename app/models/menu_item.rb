@@ -1,3 +1,3 @@
 class MenuItem < ApplicationRecord
-	validates :title, :price, :type, presence: true
+	validates :type, presence: true
 end
