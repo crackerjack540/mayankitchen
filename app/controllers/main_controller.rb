@@ -71,6 +71,8 @@ class MainController < ApplicationController
     @bourbons = Bourbon.all
     @scotchs = Scotch.all
     @liqueurs = Liqueur.all
+    @drinks = Drink.all
+
   end
 
 end
