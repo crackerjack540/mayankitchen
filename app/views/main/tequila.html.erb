@@ -63,18 +63,21 @@
   <div class="column">
 <h2 class= "menu-head">White</h2>
 
+<table class="menu">
+	    <tr>
+    	<th> </th>
+    	<th><p class="price">Glass</p></th>
+    	<th><p class="price">Bottle</p></th>
+    </tr>
+</table>
+
   <% @wine_ws.each do |wine_w| %>
 
   <table class="menu">
     <tr>
-    	<th> </th>
-    	<th><p class="card-title">Glass</p></th>
-    	<th><p class="card-title">Bottle</p></th>
-    </tr>
-    <tr>
       <th><p class="card-title"><%= wine_w.title %></p></th>
-      <th><p class="card-title"><%= wine_w.price %></p></th>
-      <th><p class="card-title"><%= wine_w.label %></p></th>
+      <th><p class="price"><%= wine_w.price %></p></th>
+      <th><p class="price"><%= wine_w.label %></p></th>
     </tr>
   </table>
   <% end %>
