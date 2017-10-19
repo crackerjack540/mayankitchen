@@ -63,12 +63,12 @@
   <div class="column">
 <h2 class= "menu-head">White</h2>
 
+
 <table class="menu">
 	    <tr>
-    	<th><p class="card-title">Brand</p> </th>
-    	<th> </th>
+    	<th class="wine"><p class="card-title">Brand</p> </th>
     	<th class="glass"><p class="glass">Glass</p></th>
-    	<th><p class="glass">Bottle</p></th>
+    	<th class="bottle"><p class="bottle">Bottle</p></th>
     </tr>
 </table>
 
@@ -76,9 +76,9 @@
 
   <table class="menu">
     <tr>
-      <th><p class="card-title"><%= wine_w.title %></p></th>
-      <th><p class="glass"><%= wine_w.price %></p></th>
-      <th><p class="bottle"><%= wine_w.label %></p></th>
+      <th class="wine"><p class="card-title"><%= wine_w.title %></p></th>
+      <th class="glass"><p class="glass"><%= wine_w.price %></p></th>
+      <th class="bottle"><p class="bottle"><%= wine_w.label %></p></th>
     </tr>
   </table>
   <% end %>
@@ -89,10 +89,10 @@
 
 <table class="menu">
 	    <tr>
-    	<th><p class="card-title">Brand</p> </th>
+    	<th class="wine"><p class="card-title">Brand</p> </th>
     	<th> </th>
     	<th class="glass"><p class="glass">Glass</p></th>
-    	<th><p class="glass">Bottle</p></th>
+    	<th class="bottle"><p class="bottle">Bottle</p></th>
     </tr>
 </table>
 
@@ -101,9 +101,9 @@
 
   <table class="menu">
     <tr>
-      <th><p class="card-title"><%= wine_r.title %></p></th>
-      <th><p class="glass"><%= wine_r.price %></p></th>
-      <th><p class="bottle"><%= wine_r.label %></p></th>
+      <th class="wine"><p class="card-title"><%= wine_r.title %></p></th>
+      <th class="glass"><p class="glass"><%= wine_r.price %></p></th>
+      <th class="bottle"><p class="bottle"><%= wine_r.label %></p></th>
     </tr>
   </table>
   <% end %>
