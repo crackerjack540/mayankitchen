@@ -18,11 +18,11 @@ h1, h2, h3, h4, h5, h6, p, a {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
- 
+
 .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: 0 none;
 }
- 
+
 .btn-primary {
     background: black;
     color: #ffffff;
@@ -32,11 +32,11 @@ h1, h2, h3, h4, h5, h6, p, a {
     background: black;
     color: white;
 }
- 
+
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
     background: #33a6cc;
 }
- 
+
 .btn-primary:active, .btn-primary.active {
     background: #007299;
     box-shadow: none;
@@ -123,7 +123,6 @@ form {
 
 .carousel {
     padding-top: 25px;
-    margin-left: 25%;
 }
 
 .col-md-6 {
@@ -138,7 +137,7 @@ form {
 .column {
   float: left;
   width: 50%;
-  padding-right: 4px; 
+  padding-right: 4px;
 }
 
 .menu {
