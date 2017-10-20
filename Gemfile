@@ -14,6 +14,8 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 gem "jquery-slick-rails"
 gem 'devise'
+gem 'meta-tags'
+
 
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'

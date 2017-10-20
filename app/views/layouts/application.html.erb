@@ -2,12 +2,12 @@
 <html>
 
   <head>
-    <title>Mayan Kitchen</title>
     <%= csrf_meta_tags %>
       <% if content_for?(:head) %>
     <%= yield(:head) %>
   <% end %>
 
+  <%= display_meta_tags %>
 
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>

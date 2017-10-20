@@ -1,11 +1,28 @@
 class MainController < ApplicationController
   def home
+    set_meta_tags title: 'Home',
+                  site: 'Mayan Kitchen',
+                  reverse: true,
+                  description: '',
+                  keywords: 'Latin, Cuisine, Tequila, Bar, Brunch, Dinner, Lunch, Dessert'
   end
 
   def menu
+    set_meta_tags title: 'Menu',
+                  site: 'Mayan Kitchen',
+                  reverse: true,
+                  description: '',
+                  keywords: 'Latin, Cuisine, Tequila, Bar, Brunch, Dinner, Lunch, Dessert'
+
   end
 
   def apply
+      set_meta_tags title: 'Apply',
+                  site: 'Mayan Kitchen',
+                  reverse: true,
+                  description: '',
+                  keywords: 'Latin, Cuisine, Tequila, Bar, Churros, Sweet, Cake, Cheesecake, Chocolate'
+
   end
 
   def dinner
@@ -63,6 +80,13 @@ class MainController < ApplicationController
      @drinks = Drink.all
      @drinks = Drink.order(created_at: :asc)
 
+    set_meta_tags title: 'Dinner',
+                  site: 'Mayan Kitchen',
+                  reverse: true,
+                  description: '',
+                  keywords: 'Latin, Cuisine, Tequila, Bar, Tapas, Soup, Queso, Nachos, Salad, Steak, Chicken, Pork, Rice, Picadillo, Salsa, Fajitas, Quesadillas, Chimichangas Enchiladas, Tacos'
+
+
   end
 
   def brunch
@@ -83,11 +107,25 @@ class MainController < ApplicationController
     
     @drinks = Drink.all
     @drinks = Drink.order(created_at: :asc)
+
+    set_meta_tags title: 'Brunch',
+                  site: 'Mayan Kitchen',
+                  reverse: true,
+                  description: '',
+                  keywords: 'Latin, Cuisine, Tequila, Bar, Eggs, Skillets, Griddles, Omelettes, Bacon, Ham, Pancakes, Waffles'
+
   end
 
   def dessert
     @desserts = Dessert.all
     @desserts = Dessert.order(created_at: :asc)
+
+    set_meta_tags title: 'Dessert',
+                  site: 'Mayan Kitchen',
+                  reverse: true,
+                  description: '',
+                  keywords: 'Latin, Cuisine, Tequila, Bar, Sandwich, Wrap, Burger, Tacos, Salad'
+
   end
 
   def lunch
@@ -96,6 +134,13 @@ class MainController < ApplicationController
 
     @drinks = Drink.all
     @drinks = Drink.order(created_at: :asc)
+
+    set_meta_tags title: 'Lunch',
+                  site: 'Mayan Kitchen',
+                  reverse: true,
+                  description: '',
+                  keywords: 'Latin, Cuisine, Tequila, Bar, Lunch'
+
   end
 
   def tequila
@@ -167,6 +212,13 @@ class MainController < ApplicationController
     
     @drinks = Drink.all
     @drinks = Drink.order(created_at: :asc)
+
+    set_meta_tags title: 'Tequila',
+                  site: 'Mayan Kitchen',
+                  reverse: true,
+                  description: '',
+                  keywords: 'Latin, Cuisine, Tequila, Bar, Liqueur, Beer, Wine, Scotch, Sangria, Margarita, Vodka, Rum, Gin'
+
 
 
   end
