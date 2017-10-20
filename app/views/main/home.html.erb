@@ -9,24 +9,29 @@
 </div>
 
 
-<div class="carousel">
-  <div><%= image_tag 'carousel01.jpg' %></div>
-  <div><%= image_tag 'carousel02.jpg' %></div>
-  <div><%= image_tag 'carousel03.jpg' %></div>
-</div>
+<div class="row">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4">
+    <div class="carousel">
+      <div><%= image_tag 'carousel01.jpg', class: 'img-fluid' %></div>
+      <div><%= image_tag 'carousel02.jpg', class: 'img-fluid' %></div>
+      <div><%= image_tag 'carousel03.jpg', class: 'img-fluid' %></div>
+    </div>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.carousel').slick({
-          infinite: true,
-          autoplay: true,
-          autoplaySpeed: 5000,
-          fade: true,
-          slidesToShow: 1,
-          adaptiveHeight: true
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.carousel').slick({
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            fade: true,
+            slidesToShow: 1,
+            adaptiveHeight: true
+        });
       });
-    });
-  </script>
+    </script>
+  </div>
+</div>
 
 <div class="row">
   <div class="column">
@@ -96,4 +101,3 @@
   </div>
 </div>
 </div>
-
