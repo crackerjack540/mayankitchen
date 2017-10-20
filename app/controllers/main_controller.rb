@@ -100,28 +100,74 @@ class MainController < ApplicationController
 
   def tequila
     @draft_ds = DraftD.all
+    @draft_ds = DraftD.order(created_at: :asc)
+
     @draft_is = DraftI.all
+    @draft_is = DraftI.order(created_at: :asc)
+
     @bottle_ds = BottleD.all
+    @bottle_ds = BottleD.order(created_at: :asc)
+
     @bottle_is = BottleI.all
+    @bottle_is = BottleI.order(created_at: :asc)
+
     @wine_rs = WineR.all
+    @wine_rs = WineR.order(created_at: :asc)
+
     @wine_ws = WineW.all
+    @wine_ws = WineW.order(created_at: :asc)
+
     @sangria_rs = SangriaR.all
+    @sangria_rs = SangriaR.order(created_at: :asc)
+
     @sangria_ws = SangriaW.all
+    @sangria_ws = SangriaW.order(created_at: :asc)
+
     @margaritas = Margarita.all
+    @margaritas = Margarita.order(created_at: :asc)
+    
     @tequila_ws = TequilaW.all
+    @tequila_ws = TequilaW.order(created_at: :asc)
+
     @tequila_rs = TequilaR.all
+    @tequila_rs = TequilaR.order(created_at: :asc)
+
     @tequila_as = TequilaA.all
+    @tequila_as = TequilaA.order(created_at: :asc)
+
     @tequila_ms = TequilaM.all
+    @tequila_ms = TequilaM.order(created_at: :asc)
+
     @tequila_ps = TequilaP.all
+    @tequila_ps = TequilaP.order(created_at: :asc)
+
     @tequila_us = TequilaU.all
+    @tequila_us = TequilaU.order(created_at: :asc)
+
     @tequila_fs = TequilaF.all
+    @tequila_fs = TequilaF.order(created_at: :asc)
+
     @vodkas = Vodka.all
+    @vodkas = Vodka.order(created_at: :asc)
+
     @rums = Rum.all
+    @rums = Rum.order(created_at: :asc)
+
     @gins = Gin.all
+    @gins = Gin.order(created_at: :asc)
+
     @bourbons = Bourbon.all
+    @bourbons = Bourbon.order(created_at: :asc)
+
     @scotchs = Scotch.all
+    @scotchs = Scotch.order(created_at: :asc)
+
     @liqueurs = Liqueur.all
+    @liqueurs = Liqueur.order(created_at: :asc)
+    
     @drinks = Drink.all
+    @drinks = Drink.order(created_at: :asc)
+
 
   end
 
