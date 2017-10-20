@@ -10,6 +10,7 @@ class MainController < ApplicationController
 
   def dinner
      @menu_items = MenuItem.all
+     @menu_items = MenuItem.order(created_at: :desc)
      @appetizers = Appetizer.all
      @tapas = Tapa.all
      @soups = Soup.all
