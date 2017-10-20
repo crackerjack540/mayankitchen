@@ -36,63 +36,126 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="column">
-<h2 id="address"> 507 Broad Street </br> Chattanooga, TN 37402</h2>
-
-<div id="call">
-<a class="btn btn-primary btn-xlg" href="tel:423-682-7835" style="padding:25px;background-color:orangered">
-   Click to Call <span class="glyphicon glyphicon-earphone" style="padding-left:10px; padding-right:10px;"></span>423-682-7835
-</a>
-</div>
-</div>
-
-<div class="column">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.2441047349766!2d-85.31327692147057!3d35.050635672002045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88605e6253590e9f%3A0x58dc5c4652d15155!2s507+Broad+St%2C+Chattanooga%2C+TN+37402!5e0!3m2!1sen!2sus!4v1508457545112" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
-</div>
-
-<h2 class="menu-title">Hours</h2></br>
+  <h1 class="menu-title">Check Out Our Menus!</h1>
 
 <div class="container">
-  <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-12">
       <div class="card text-center">
         <div class="card block">
-          <h4 class="card-title">Monday - Thursday</h4>
-          <p class="card-text">11:00AM - 10:00PM</p>
+          <h4 class="card-title">Dinner</h4>
+          <p class="card-text">Starts Every Day At 3!</p>
+         <div class="container">
+         <%= link_to "Dinner", dinner_path, class: "btn btn-danger" %>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col-sm-12">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title">Lunch</h4>
+          <p class="card-text">Monday - Friday 11Am - 3PM!</p>
+          <div class="container">
+         <%= link_to "Lunch", lunch_path, class: "btn btn-danger" %>
+       </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col-sm-12">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title">Brunch</h4>
+          <p class="card-text">Saturday & Sunday 9AM - 3PM!</p>
+         <div class="container">
+         <%= link_to "Brunch", brunch_path, class: "btn btn-danger" %>
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col-sm-12">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title">Dessert</h4>
+         <div class="container">
+         <%= link_to "Dessert", dessert_path, class: "btn btn-danger" %>
+       </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col-sm-12">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title">Drinks</h4>
+         <div class="container">
+         <%= link_to "Drinks", drinks_path, class: "btn btn-danger" %>
+       </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<h1 class="menu-title">About Us</h1>
+
+<div class="row">
+
+    <div class="col-sm-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title">Visit Us!</h4>
+          <p class="card-text">507 Broad Street 
+Chattanooga, TN 37402</p>
+
         </div>
       </div>
     </div>
 
-    <div class="col-sm-6">
+
+    <div class="col-sm-4">
       <div class="card text-center">
         <div class="card block">
-          <h4 class="card-title">Friday</h4>
-          <p class="card-text">11:00AM - 12:00AM</p>
+          <h4 class="card-title">Hours</h4>
+          <p class="card-title">Monday - Thursday</p>
+          <p class="card-text">11AM - 10PM</p>
+          <p class="card-title">Friday</p>
+          <p class="card-text">11AM - 12AM</p>
+          <p class="card-title">Saturday</p>
+          <p class="card-text">9AM - 12AM</p>
+          <p class="card-title">Sunday</p>
+          <p class="card-text">9AM - 10PM</p>
+
         </div>
       </div>
     </div>
 
-    <div class="col-sm-6">
+    <div class="col-sm-4">
       <div class="card text-center">
         <div class="card block">
-          <h4 class="card-title">Saturday</h4>
-          <p class="card-text">09:00AM - 12:00AM</p>
+          <h4 class="card-title">Contact Us!</h4>
+          <a class="btn btn-danger btn-xlg" href="tel:423-682-7835" style="padding:15px;">
+          Click to Call <span class="glyphicon glyphicon-earphone" style="padding-left:0px; padding-right:0px;"></span>423-682-7835
+          </a>
+          <p class="card-title">Join Our Team!</p>
+          <%= link_to "Apply Now", apply_path, class: "btn btn-danger" %>
+
+
         </div>
       </div>
     </div>
 
-    <div class="col-sm-6">
-      <div class="card text-center">
-        <div class="card block">
-          <h4 class="card-title">Sunday</h4>
-          <p class="card-text">09:00AM - 10:00PM</p>
-        </div>
-      </div>
-    </div>
-   </div>
- </div>
+</div>
+
 
       <h2 class="menu-title"> Follow Us!</h2>
       <div class="container">
