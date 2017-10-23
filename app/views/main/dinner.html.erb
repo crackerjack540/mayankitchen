@@ -37,14 +37,21 @@
 
 <h2 class="menu-head">Sopas (Soups)</h2>
 
-  <% @soups.each do |soup| %>
-  <table class="menu">
-    <tr>
-      <th><p class="card-title"><%= soup.title %></p></th>
-      <th><p class="price"><%= soup.price %></p></th>
+<table class="soup">
+      <tr>
+      <th class="wine"><p class="card-title"></p> </th>
+      <th class="glass"><p class="glass">Cup</p></th>
+      <th class="bottle"><p class="bottle">Bowl</p></th>
     </tr>
+</table>
+
+
+  <% @soups.each do |soup| %>
+  <table class="soup">
     <tr>
-      <th ><p class="description"><%= soup.description %></p></th>
+      <th class="wine"><p class="card-title"><%= soup.title %></p></th>
+      <th class="glass"><p class="glass">$<%= soup.price %></p></th>
+      <th class="bottle"><p class="bottle">$<%= soup.label %></p></th>
     </tr>
   </table>
   <% end %>
