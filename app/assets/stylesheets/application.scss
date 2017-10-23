@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 .menu-head {
   font: 100 40px/1.5 'Pacifico', Helvetica, sans-serif;
   color: orangered;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   background: black;
   border-style: solid;
     border-top:  black;
@@ -69,7 +69,8 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .card-title {
-   font: 100 25px/1.5 'Pacifico', Helvetica, sans-serif;
+   font: 100 25px/1.5 Times New Roman;
+   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     color: white;
     padding-left: 15px;
 
@@ -103,7 +104,7 @@ form {
 .menu-title {
     font: 100 60px/1.5 'Pacifico', Helvetica, sans-serif;
     color: orangered;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
     background: black;
     border-style: solid;
     border-top:  black;
@@ -135,7 +136,6 @@ form {
 
 
 .column {
-  float: left;
   width: 50%;
   padding-right: 4px;
 }
