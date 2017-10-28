@@ -7,18 +7,21 @@
 <h1 class="menu-title">Dinner Menu</h1>
 
 <h2 class="menu-head">Antojiotos (Appetizers)</h2>
-
+<div class="container">
+  <div class="row">
   <% @appetizers.each do |appetizer| %>
-  <table class="menu">
-    <tr>
-      <th><p class="card-title"><%= appetizer.title %></p></th>
-      <th><p class="price">$<%= appetizer.price %></p></th>
-    </tr>
-    <tr>
-      <th ><p class="description"><%= appetizer.description %></p></th>
-    </tr>
-  </table>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= appetizer.title %>    $<%= appetizer.price %></h4>
+          <p class="card-text"><%= appetizer.description %></p>
+        </div>
+      </div>
+    </div>
   <% end %>
+</div>
+</div>
 
 <h2 class="menu-head">Tapas</h2>
 
