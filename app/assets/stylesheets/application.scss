@@ -4,20 +4,19 @@
 
 
 body {
-  background: black; 
-  /* For browsers that do not support gradients */
-  
-  background: -webkit-radial-gradient(black, gray); 
-  /* Safari 5.1 to 6.0 */
-  
-  background: -o-radial-gradient(black, gray); 
-  /* For Opera 11.6 to 12.0 */
-  
-  background: -moz-radial-gradient(black, gray); 
-  /* For Firefox 3.6 to 15 */
-  
-  background: radial-gradient(black, gray);
-   /* Standard syntax */
+    background: black; 
+    /* For browsers that do not support gradients */
+
+    background: -webkit-linear-gradient(#672e11, black); 
+    /* For Safari 5.1 to 6.0 */
+
+    background: -o-linear-gradient(#672e11, black); 
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#672e11, black); 
+    /* For Firefox 3.6 to 15 */
+    
+    background: linear-gradient(#672e11, black); /* Standard syntax */
+
 }
 
 
@@ -225,7 +224,7 @@ iframe {
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
-  background: #262626;
+  background: #672e11;
 }
 
 #nacho {

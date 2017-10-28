@@ -220,7 +220,10 @@ class MainController < ApplicationController
                   keywords: 'Latin, Cuisine, Tequila, Bar, Liqueur, Beer, Wine, Scotch, Sangria, Margarita, Vodka, Rum, Gin'
 
 
+end
+def contact
+end
 
-  end
+
 
 end
