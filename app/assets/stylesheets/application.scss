@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .menu-head {
   font: 100 40px/1.5 'Pacifico', Helvetica, sans-serif;
-  color: orangered;
+  color: white;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   background: black;
   border-style: solid;
@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .card-title {
-   font: 100 25px/1.5 Times New Roman;
+   font: 100 30px/1.5 Times New Roman;
    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
    letter-spacing: 3px;
     color: white;
@@ -118,7 +118,7 @@ form {
 
 .menu-title {
     font: 100 60px/1.5 'Pacifico', Helvetica, sans-serif;
-    color: orangered;
+    color: white;
     text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
     background: black;
     border-style: solid;
@@ -240,4 +240,8 @@ label {
 
 .row {
   margin-right: 0;
+}
+
+nav {
+  margin: 0 auto;
 }
