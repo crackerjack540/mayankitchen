@@ -221,9 +221,29 @@ class MainController < ApplicationController
 
 
 end
+
 def contact
 end
 
+def appetizer
+       @appetizers = Appetizer.all
+     @appetizers = Appetizer.order(created_at: :asc)
 
+     @tapas = Tapa.all
+     @tapas = Tapa.order(created_at: :asc)
+
+     @soups = Soup.all
+     @soups = Soup.order(created_at: :asc)
+
+     @dips = Dip.all
+     @dips = Dip.order(created_at: :asc)
+
+     @nachos = Nacho.all
+     @nachos = Nacho.order(created_at: :asc)
+
+     @salads = Salad.all
+     @salads = Salad.order(created_at: :asc)
+
+end
 
 end

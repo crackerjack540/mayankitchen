@@ -24,6 +24,8 @@ Rails.application.routes.draw do
 
   get "contact" => 'main#contact'
 
+  get "apps" => 'main#appetizer'
+
     resources :menu_items
 
 
