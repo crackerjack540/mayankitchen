@@ -5,29 +5,37 @@
 <h1 class="menu-title">Lunch Specials</h1>
 <h2 class="menu-head"> Served Monday - Friday 11AM - 3PM</h2>
 
+<div class="container">
+  <div class="row">
   <% @lunches.each do |lunch| %>
-  <table class="menu">
-    <tr>
-      <th><p class="card-title"><%= lunch.title %></p></th>
-      <th><p class="price">$<%= lunch.price %></p></th>
-    </tr>
-    <tr>
-      <th ><p class="description"><%= lunch.description %></p></th>
-    </tr>
-  </table>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= lunch.title %>    $<%= lunch.price %></h4>
+          <p class="card-text"><%= lunch.description %></p>
+        </div>
+      </div>
+    </div>
   <% end %>
+</div>
+</div>
 
 <h2 class="menu-head"> Bebidas (Drinks)</h2>
 
 
+<div class="container">
+  <div class="row">
   <% @drinks.each do |drink| %>
-  <table class="menu">
-    <tr>
-      <th><p class="card-title"><%= drink.title %></p></th>
-      <th><p class="price">$<%= drink.price %></p></th>
-    </tr>
-    <tr>
-      <th ><p class="description"><%= drink.description %></p></th>
-    </tr>
-  </table>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= drink.title %>    $<%= drink.price %></h4>
+          <p class="card-text"><%= drink.description %></p>
+        </div>
+      </div>
+    </div>
   <% end %>
+</div>
+</div>

@@ -7,84 +7,108 @@
 
 <h2 class="menu-head"> Huevos (Eggs)</h2>
 
+<div class="container">
+  <div class="row">
   <% @eggs.each do |egg| %>
-  <table class="menu">
-    <tr>
-      <th><p class="card-title"><%= egg.title %></p></th>
-      <th><p class="price">$<%= egg.price %></p></th>
-    </tr>
-    <tr>
-      <th ><p class="description"><%= egg.description %></p></th>
-    </tr>
-  </table>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= egg.title %>    $<%= egg.price %></h4>
+          <p class="card-text"><%= egg.description %></p>
+        </div>
+      </div>
+    </div>
   <% end %>
+</div>
+</div>
 
 <h2 class="menu-head"> Sartenes (Skillets)</h2>
 
+<div class="container">
+  <div class="row">
   <% @skillets.each do |skillet| %>
-  <table class="menu">
-    <tr>
-      <th><p class="card-title"><%= skillet.title %></p></th>
-      <th><p class="price">$<%= skillet.price %></p></th>
-    </tr>
-    <tr>
-      <th ><p class="description"><%= skillet.description %></p></th>
-    </tr>
-  </table>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= skillet.title %>    $<%= skillet.price %></h4>
+          <p class="card-text"><%= skillet.description %></p>
+        </div>
+      </div>
+    </div>
   <% end %>
+</div>
+</div>
 
 <h2 class="menu-head"> De La Plancha (Griddle)</h2>
 
+<div class="container">
+  <div class="row">
   <% @griddles.each do |griddle| %>
-  <table class="menu">
-    <tr>
-      <th><p class="card-title"><%= griddle.title %></p></th>
-      <th><p class="price">$<%= griddle.price %></p></th>
-    </tr>
-    <tr>
-      <th ><p class="description"><%= griddle.description %></p></th>
-    </tr>
-  </table>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= griddle.title %>    $<%= griddle.price %></h4>
+          <p class="card-text"><%= griddle.description %></p>
+        </div>
+      </div>
+    </div>
   <% end %>
+</div>
+</div>
 
 <h2 class="menu-head"> Tortillas De Huevo </br> (Omelettes)</h2>
 
+<div class="container">
+  <div class="row">
   <% @omelettes.each do |omelette| %>
-  <table class="menu">
-    <tr>
-      <th><p class="card-title"><%= omelette.title %></p></th>
-      <th><p class="price">$<%= omelette.price %></p></th>
-    </tr>
-    <tr>
-      <th ><p class="description"><%= omelette.description %></p></th>
-    </tr>
-  </table>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= omelette.title %>    $<%= omelette.price %></h4>
+          <p class="card-text"><%= omelette.description %></p>
+        </div>
+      </div>
+    </div>
   <% end %>
+</div>
+</div>
 
 <h2 class="menu-head"> Brunch Sides</h2>
 
+<div class="container">
+  <div class="row">
   <% @brunch_sides.each do |brunch_side| %>
-  <table class="menu">
-    <tr>
-      <th><p class="card-title"><%= brunch_side.title %></p></th>
-      <th><p class="price">$<%= brunch_side.price %></p></th>
-    </tr>
-    <tr>
-      <th ><p class="description"><%= brunch_side.description %></p></th>
-    </tr>
-  </table>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= brunch_side.title %>    $<%= brunch_side.price %></h4>
+          <p class="card-text"><%= brunch_side.description %></p>
+        </div>
+      </div>
+    </div>
   <% end %>
+</div>
+</div>
 
 <h2 class="menu-head"> Bebidas (Drinks)</h2>
 
+<div class="container">
+  <div class="row">
   <% @drinks.each do |drink| %>
-  <table class="menu">
-    <tr>
-      <th><p class="card-title"><%= drink.title %></p></th>
-      <th><p class="price">$<%= drink.price %></p></th>
-    </tr>
-    <tr>
-      <th ><p class="description"><%= drink.description %></p></th>
-    </tr>
-  </table>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= drink.title %>    $<%= drink.price %></h4>
+          <p class="card-text"><%= drink.description %></p>
+        </div>
+      </div>
+    </div>
   <% end %>
+</div>
+</div>
