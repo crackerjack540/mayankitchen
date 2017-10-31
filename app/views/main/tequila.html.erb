@@ -114,17 +114,21 @@
 
 <h2 class="menu-head"> Tequila Flights</h2>
 
+<div class="container">
+  <div class="row">
   <% @tequila_fs.each do |tequila_f| %>
-  <table class="menu">
-    <tr>
-      <th><p class="card-title"><%= tequila_f.title %></p></th>
-      <th><p class="price">$<%= tequila_f.price %></p></th>
-    </tr>
-    <tr>
-      <th ><p class="description"><%= tequila_f.description %></p></th>
-    </tr>
-  </table>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= tequila_f.title %>    $<%= tequila_f.price %></h4>
+          <p class="card-text"><%= tequila_f.description %></p>
+        </div>
+      </div>
+    </div>
   <% end %>
+</div>
+</div>
 
 
 <h1 class="menu-title">Spirits</h1>
@@ -235,19 +239,6 @@
 </div>
 </div>
 
-<h2 class="menu-head"> Bebidas (Drinks)</h2>
-
-  <% @drinks.each do |drink| %>
-  <table class="menu">
-    <tr>
-      <th><p class="card-title"><%= drink.title %></p></th>
-      <th><p class="price">$<%= drink.price %></p></th>
-    </tr>
-    <tr>
-      <th ><p class="description"><%= drink.description %></p></th>
-    </tr>
-  </table>
-  <% end %>
 
 <h1 class="menu-title"> Beer</h1>
 
@@ -420,3 +411,20 @@
 </div>
 </div>
 
+<h2 class="menu-head"> Bebidas (Drinks)</h2>
+
+<div class="container">
+  <div class="row">
+  <% @drinks.each do |drink| %>
+
+    <div class="col-sm-6 col-lg-4">
+      <div class="card text-center">
+        <div class="card block">
+          <h4 class="card-title"><%= drink.title %>    $<%= drink.price %></h4>
+          <p class="card-text"><%= drink.description %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>
