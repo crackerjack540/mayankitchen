@@ -1,5 +1,6 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= render 'layouts/header' %>
 </head>
 
 
@@ -12,7 +13,7 @@
 
     <div class="card text-center">
     <%= image_tag 'food01.jpg' %>
-      <div class="card-block">
+      <div class="card-block-menu">
       <%= link_to "Dinner", dinner_path, class: "btn btn-danger" %>
   </div>
 </div>
@@ -25,7 +26,7 @@
 
     <div class="card text-center">
     <%= image_tag 'food02.jpg' %>
-      <div class="card-block">
+      <div class="card-block-menu">
       <%= link_to "Lunch", lunch_path, class: "btn btn-danger" %>
               <p class="card-text">Mon-Fri 11AM-3PM</p>
 
@@ -38,9 +39,9 @@
 
     <div class="card text-center">
     <%= image_tag 'food03.jpg' %>
-      <div class="card-block">
+      <div class="card-block-menu">
       <%= link_to "Brunch", brunch_path, class: "btn btn-danger" %>
-              <p class="card-text">Sat & Sun 9AM-3PM</p>
+              <p class="card-text">Sat & Sun 10AM-3PM</p>
 
   </div>
 </div>
@@ -50,7 +51,7 @@
 
     <div class="card text-center">
     <%= image_tag 'food04.jpg' %>
-      <div class="card-block">
+      <div class="card-block-menu">
       <%= link_to "Dessert", dessert_path, class: "btn btn-danger" %>
   </div>
 </div>
@@ -60,8 +61,21 @@
 
     <div class="card text-center">
     <%= image_tag 'food02.jpg' %>
-      <div class="card-block">
+      <div class="card-block-menu">
+      <%= link_to "Apps & Snacks", apps_path, class: "btn btn-danger" %>
+  </div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+
+    <div class="card text-center">
+    <%= image_tag 'food02.jpg' %>
+      <div class="card-block-menu">
       <%= link_to "Tequila Bar", drinks_path, class: "btn btn-danger" %>
   </div>
+</div>
+</div>
+</div>
 </div>
 </div>
