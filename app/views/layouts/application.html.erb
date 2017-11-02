@@ -3,6 +3,8 @@
 
   <head>
 
+    <%= favicon_link_tag 'monkey.png' %>
+
     <%= csrf_meta_tags %>
       <% if content_for?(:head) %>
     <%= yield(:head) %>
