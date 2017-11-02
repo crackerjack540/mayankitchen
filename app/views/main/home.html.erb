@@ -8,11 +8,8 @@
 <%= render 'layouts/header' %>
 </head>
 <body>
-<div class="row">
-  <div class="col-sm-3"></div>
-  <div class="col-sm-6">
-  </div>
-</div>
+
+<%= image_tag 'mayan-logo.jpg', class: 'logo-home' %>
 
 <div class="container">
     <div class="carousel">
@@ -35,83 +32,11 @@
     </script>
 </div>
 
-  <h1 class="menu-title">Check Out Our Menus!</h1>
-
 <div class="row">
-<div class="container">
-  <div class="row">
-
-    <div class="col-md-6">
-      <div class="card text-center">
-        <div class="card block">
-          <a href="dinner"><h4 class="card-title">Dinner</h4></a>
-          <p class="card-text">Starts Every Day At 3!</p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="col-md-6">
-      <div class="card text-center">
-        <div class="card block">
-          <a href="lunch"><h4 class="card-title">Lunch</h4></a>
-          <p class="card-text">Monday - Friday 11AM - 3PM!</p>
-        </div>
-      </div>
-    </div>
+  <div class="col-sm-3"></div>
+  <div class="col-sm-6"><%= image_tag 'mayan-logo.jpg' %>
+  </div>
 </div>
-</div>
-</div>
-
-<div class="row">
-<div class="container">
-  <div class="row">
-
-    <div class="col-md-6">
-      <div class="card text-center">
-        <div class="card block">
-          <a href="brunch"><h4 class="card-title">Brunch</h4></a>
-          <p class="card-text">Saturday & Sunday 9AM - 3PM!</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="card text-center">
-        <div class="card block">
-          <a href="dessert"><h4 class="card-title">Desserts</h4></a>
-          <p class="card-text">All Day Long!</p>
-        </div>
-      </div>
-    </div>
-</div>
-</div>
-</div>
-
-<div class="container">
-    <div class="col-sm-12">
-      <div class="card text-center">
-        <div class="card block">
-        <a href="apps">  <h4 class="card-title">Apps, Snacks, & Salads</h4></a>
-        </div>
-      </div>
-    </div>
-</div>
-</div>
-
-
-<div class="container">
-    <div class="col-sm-12">
-      <div class="card text-center">
-        <div class="card block">
-        <a href="drinks">  <h4 class="card-title">Tequila Bar</h4></a>
-        </div>
-      </div>
-    </div>
-</div>
-</div>
-
-<h1 class="menu-title">About Us</h1>
 
 <div class="row">
 
@@ -132,14 +57,14 @@ Chattanooga, TN 37402</p>
       <div class="card text-center">
         <div class="card block">
           <h4 class="menu-head">Hours</h4>
-          <p class="card-title">Mon - Thur</p>
-          <p class="card-text">11AM - 10PM</p>
-          <p class="card-title">Friday</p>
-          <p class="card-text">11AM - 12AM</p>
-          <p class="card-title">Saturday</p>
-          <p class="card-text">9AM - 12AM</p>
-          <p class="card-title">Sunday</p>
-          <p class="card-text">9AM - 10PM</p>
+          <h5>Mon - Thur</h5>
+          <h6>11AM - 10PM</h6>
+          <h5 class="hours">Friday</h5>
+          <h6>11AM - 12AM</h6>
+          <h5 class="hours">Saturday</h5>
+          <h6>10AM - 12AM</h6>
+          <h5 class="hours">Sunday</h5>
+          <h6>10AM - 10PM</h6>
 
         </div>
       </div>
