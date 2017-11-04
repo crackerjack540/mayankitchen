@@ -246,4 +246,12 @@ def appetizer
 
 end
 
+def download_pdf
+  send_file(
+    "#{Rails.root}/public/mayan-application.pdf",
+    filename: "mayan-application.pdf",
+    type: "application/pdf"
+  )
+end
+
 end
