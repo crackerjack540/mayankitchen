@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get "dinner" => 'main#dinner'
 
-#  get "menu" => 'main#menu'
+  get "menu" => 'main#menu'
 
   get "apply" => 'main#apply'
 
