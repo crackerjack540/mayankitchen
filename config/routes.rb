@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   devise_for :models
 
-  root 'main#apply'
+  root 'main#home'
 
   get "home" => 'main#home'
 
