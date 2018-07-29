@@ -123,14 +123,13 @@ form {
 
 
 .menu-title {
-  padding-top: 10px;
   border-radius: 25px;
     font: 100 40px/1.5 'Pacifico', Helvetica, sans-serif;
     color: white;
-    text-shadow: 0px 0 white, 0 0px white, 0px 0 white, 0 0px white;
     background: black;
     text-align: center;
     letter-spacing: 2px;
+    margin-top: 10px;
 }
 
 .logo {
@@ -220,6 +219,7 @@ label {
   padding-bottom: 5px;
   background: #672e11;
 }
+
 
 #nacho {
   text-align: center;
