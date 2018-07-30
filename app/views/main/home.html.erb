@@ -1,3 +1,5 @@
+<div class="row">
+  <div class="col-sm-6">
 <head>
 <% content_for :head do %>
   <meta name="turbolinks-cache-control" content="no-cache">
@@ -9,7 +11,6 @@
 <body>
 
 
-
     <div class="carousel">
       <div><%= image_tag 'carousel01.jpg', class: 'img-fluid' %></div>
       <div><%= image_tag 'carousel02.jpg', class: 'img-fluid' %></div>
@@ -19,6 +20,7 @@
       <div><%= image_tag 'carousel06.jpg', class: 'img-fluid' %></div>
       <div><%= image_tag 'carousel07.jpg', class: 'img-fluid' %></div>
     </div>
+
 
     <script type="text/javascript">
       $(document).ready(function(){
@@ -32,4 +34,37 @@
         });
       });
     </script>
+
+</div>
+
+<div class="col-sm-6">
+    <div class="carousel" id="car2">
+      <div><%= image_tag 'steak.jpg', class: 'img-fluid' %></div>
+      <div><%= image_tag 'quesadilla.jpg', class: 'img-fluid' %></div>
+      <div><%= image_tag 'taco.jpg', class: 'img-fluid' %></div>
+      <div><%= image_tag 'chimichanga.jpg', class: 'img-fluid' %></div>
+      <div><%= image_tag 'seafood.jpg', class: 'img-fluid' %></div>
+      <div><%= image_tag 'chicken.jpg', class: 'img-fluid' %></div>
+      <div><%= image_tag 'dessert.jpg', class: 'img-fluid' %></div>
+    </div>
+
+
+
+
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.carousel').slick({
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            arrows: false,
+            fade: true,
+            slidesToShow: 1,
+        });
+      });
+    </script>
+</div>
+</div>
+
 

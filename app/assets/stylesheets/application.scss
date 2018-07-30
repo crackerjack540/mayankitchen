@@ -68,6 +68,10 @@ h1, h2, h3, h4, h5, h6, p, a {
 	color: white;
 }
 
+.navlogo {
+  height: 50px;
+}
+
 #title {
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -140,6 +144,8 @@ form {
 .carousel {
     padding-top: 15px;
 }
+
+
 
 .col-md-6 {
   padding-bottom: 15px;
@@ -250,7 +256,8 @@ label {
 
 
 .img-fluid {
-  width: 100%;
+  border: solid 1px;
+  border-color: #797979;
 }
 
 .menu-photo {
@@ -318,3 +325,4 @@ border-radius: 25px;
 #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
 }
+
