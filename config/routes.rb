@@ -26,6 +26,8 @@ Rails.application.routes.draw do
 
   get "apps" => 'main#appetizer'
 
+  get "about" => 'main#about'
+
   get 'main/download_pdf'
 
     resources :menu_items

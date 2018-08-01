@@ -254,4 +254,8 @@ def download_pdf
   )
 end
 
+def about
+end
+  
+
 end
