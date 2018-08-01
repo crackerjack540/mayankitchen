@@ -1,6 +1,3 @@
-<div class="row">
-  <div class="col-sm-4"></div>
-  <div class="col-sm-7">
 <head>
 <% content_for :head do %>
   <meta name="turbolinks-cache-control" content="no-cache">
@@ -13,12 +10,12 @@
 
 
     <div class="carousel">
-      <div><%= image_tag 'carousel02.jpg', class: 'img-fluid' %></div>
-      <div><%= image_tag 'carousel03.jpg', class: 'img-fluid' %></div>
-      <div><%= image_tag 'carousel04.jpg', class: 'img-fluid' %></div>
-      <div><%= image_tag 'carousel05.jpg', class: 'img-fluid' %></div>
-      <div><%= image_tag 'carousel06.jpg', class: 'img-fluid' %></div>
-      <div><%= image_tag 'carousel07.jpg', class: 'img-fluid' %></div>
+      <div><%= image_tag 'carousel02.jpg', class: 'img-fluid', id: 'home-photo' %></div>
+      <div><%= image_tag 'carousel03.jpg', class: 'img-fluid', id: 'home-photo' %></div>
+      <div><%= image_tag 'carousel04.jpg', class: 'img-fluid', id: 'home-photo' %></div>
+      <div><%= image_tag 'carousel05.jpg', class: 'img-fluid', id: 'home-photo' %></div>
+      <div><%= image_tag 'carousel06.jpg', class: 'img-fluid', id: 'home-photo' %></div>
+      <div><%= image_tag 'carousel07.jpg', class: 'img-fluid', id: 'home-photo' %></div>
     </div>
 
 
@@ -35,14 +32,7 @@
       });
     </script>
 
-</div>
-</div>
 
-<div class="row">
-  <div class="col-sm-3"></div>
-  <div class="col-sm-6">
 
-<%= image_tag 'deals.jpg', class: 'img-fluid' %>
+<%= image_tag 'deals.jpg', class: 'img-fluid', id: 'home-photo' %>
 
-</div>
-</div>
