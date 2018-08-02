@@ -248,8 +248,16 @@ end
 
 def download_pdf
   send_file(
-    "#{Rails.root}/public/mayan-application.pdf",
-    filename: "mayan-application.pdf",
+    "#{Rails.root}/public/applicationeng.pdf",
+    filename: "EnglishApplication.pdf",
+    type: "application/pdf"
+  )
+end
+
+def download_pdf1
+  send_file(
+    "#{Rails.root}/public/applicationspa.pdf",
+    filename: "SpanishApplication.pdf",
     type: "application/pdf"
   )
 end

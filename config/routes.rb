@@ -30,6 +30,8 @@ Rails.application.routes.draw do
 
   get 'main/download_pdf'
 
+  get 'main/download_pdf1'
+
     resources :menu_items
 
 
