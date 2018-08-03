@@ -347,3 +347,18 @@ border-radius: 25px;
 #apply-btn {
   margin-bottom: 15px;
 }
+
+.slide {
+  position: relative;
+}
+
+.slide__caption {
+  font: 100 45px/1.5 'Oswald', Helvetica, sans-serif;
+  color: white;
+  bottom: 0;
+  min-height: 600px;
+  left: 30px;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
