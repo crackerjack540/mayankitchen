@@ -368,3 +368,9 @@ border-radius: 25px;
 .top-logo {
   width: 30%
 }
+
+@media only screen and (max-width: 600px) {
+  #home-pic {
+  widtch: 100%;
+  }
+}
