@@ -100,7 +100,9 @@ h1, h2, h3, h4, h5, h6, p, a {
   background: black;
   text-align: center;
   margin-top: 15px;
+  margin-right: 25%;
   margin-bottom: 15px;
+  margin-left: 25%;
   letter-spacing: 2px;
   border-radius: 25px;
 }
@@ -144,6 +146,8 @@ form {
     text-align: center;
     letter-spacing: 2px;
     margin-top: 10px;
+    margin-right: 20%;
+    margin-left: 20%;
 }
 
 .logo {
@@ -383,5 +387,21 @@ border-radius: 25px;
   width: 100%;
   border: solid 3px;
   border-color: #797979;
+
+}
+
+.footer-head {
+  .menu-head {
+
+  font: 100 30px/1.5 'Pacifico', Helvetica, sans-serif;
+  color: white;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  background: black;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  border-radius: 25px;
+}
 
 }
